@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeFestivalViewController.h"
+
+#import "SearchFestivalViewController.h"
+#import "MainSidebarViewController.h"
+#import "SWRevealViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +21,33 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = window;
+    
+    HomeFestivalViewController *frontViewController = [[HomeFestivalViewController alloc] init];
+    MainSidebarViewController *mainSidebarVC = [[MainSidebarViewController alloc] init];
+    
+    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithRootViewController:frontViewController];
+    UINavigationController *sidebarNavigationController = [[UINavigationController alloc] initWithRootViewController:mainSidebarVC];
+    
+    frontNavigationController.navigationBarHidden = YES;
+    SWRevealViewController *revealController = [[SWRevealViewController alloc] initWithRearViewController:sidebarNavigationController frontViewController:frontNavigationController];
+    revealController.rightViewController  = mainSidebarVC;
+    
+//    revealController.delegate = self;
+    
+    
+    
+//    revealController.bounceBackOnOverdraw=NO;
+//    revealController.stableDragOnOverdraw=YES;
+    
+    self.viewController = revealController;
+    
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -43,6 +73,7 @@
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
+
 
 #pragma mark - Core Data stack
 
