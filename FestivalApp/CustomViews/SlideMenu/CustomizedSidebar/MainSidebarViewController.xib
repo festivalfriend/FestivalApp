@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" promptedForUpgradeToXcode5="NO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainSidebarViewController">
+            <connections>
+                <outlet property="searchDisplayController" destination="OxB-Ra-2TL" id="jkA-gp-W7n"/>
+                <outlet property="view" destination="1" id="21"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccZ-g2-Ylj">
+                    <rect key="frame" x="50" y="66" width="260" height="39"/>
+                    <state key="normal" title="Chats">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onChats:" destination="-1" eventType="touchUpInside" id="lbp-2N-baN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldg-nJ-fGi">
+                    <rect key="frame" x="50" y="106" width="260" height="39"/>
+                    <state key="normal" title="Festivals">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onFestivals:" destination="-1" eventType="touchUpInside" id="Uf8-2f-xjt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JD-ub-FUj">
+                    <rect key="frame" x="50" y="144" width="260" height="30"/>
+                    <state key="normal" title="Friends">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onFriends:" destination="-1" eventType="touchUpInside" id="Frb-YU-JuX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOE-xa-Rhz">
+                    <rect key="frame" x="50" y="184" width="260" height="30"/>
+                    <state key="normal" title="Settings">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onSettings:" destination="-1" eventType="touchUpInside" id="dj7-gB-21I"/>
+                    </connections>
+                </button>
+                <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="kU5-KI-LEh">
+                    <rect key="frame" x="50" y="22" width="260" height="44"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="0.31372550129890442" green="0.30588236451148987" blue="0.30980393290519714" alpha="1" colorSpace="deviceRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140" y="154"/>
+        </view>
+        <searchDisplayController id="6u5-bq-TKL">
+            <connections>
+                <outlet property="delegate" destination="-1" id="kMi-oC-pXM"/>
+                <outlet property="searchContentsController" destination="-1" id="e5K-kr-Krz"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="qfd-OD-F8G"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="3f5-Xg-F5e"/>
+            </connections>
+        </searchDisplayController>
+        <searchDisplayController id="OxB-Ra-2TL">
+            <connections>
+                <outlet property="delegate" destination="-1" id="wTH-IN-pJQ"/>
+                <outlet property="searchContentsController" destination="-1" id="dSB-6m-eJO"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="Kha-np-uV1"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="VIK-IA-pZw"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>
