@@ -26,6 +26,8 @@
 		1F0937251A8507C30040E606 /* pin_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F09371D1A8507C30040E606 /* pin_grey@2x.png */; };
 		1F0937281A851DD60040E606 /* bg_navigationBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0937261A851DD60040E606 /* bg_navigationBar.png */; };
 		1F0937291A851DD60040E606 /* bg_tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0937271A851DD60040E606 /* bg_tabBar.png */; };
+		1F1985581A8C978700769241 /* bestival_photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1985561A8C978700769241 /* bestival_photo1.png */; };
+		1F1985591A8C978700769241 /* bestival_photo1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1985571A8C978700769241 /* bestival_photo1@2x.png */; };
 		1F1B50CF1A8A52900056A6E5 /* BestivalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B50CD1A8A52900056A6E5 /* BestivalInfoViewController.m */; };
 		1F1B50D01A8A52900056A6E5 /* BestivalInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B50CE1A8A52900056A6E5 /* BestivalInfoViewController.xib */; };
 		1F2941091A885B0A00C0AE80 /* SearchFestivalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2941071A885B0A00C0AE80 /* SearchFestivalViewController.m */; };
@@ -99,6 +101,8 @@
 		1F09371D1A8507C30040E606 /* pin_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin_grey@2x.png"; sourceTree = "<group>"; };
 		1F0937261A851DD60040E606 /* bg_navigationBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_navigationBar.png; sourceTree = "<group>"; };
 		1F0937271A851DD60040E606 /* bg_tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_tabBar.png; sourceTree = "<group>"; };
+		1F1985561A8C978700769241 /* bestival_photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bestival_photo1.png; sourceTree = "<group>"; };
+		1F1985571A8C978700769241 /* bestival_photo1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bestival_photo1@2x.png"; sourceTree = "<group>"; };
 		1F1B50CC1A8A52900056A6E5 /* BestivalInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BestivalInfoViewController.h; path = Bestival/BestivalInfoViewController.h; sourceTree = "<group>"; };
 		1F1B50CD1A8A52900056A6E5 /* BestivalInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BestivalInfoViewController.m; path = Bestival/BestivalInfoViewController.m; sourceTree = "<group>"; };
 		1F1B50CE1A8A52900056A6E5 /* BestivalInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BestivalInfoViewController.xib; path = Bestival/BestivalInfoViewController.xib; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 		1F0937151A8507C30040E606 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1F1985561A8C978700769241 /* bestival_photo1.png */,
+				1F1985571A8C978700769241 /* bestival_photo1@2x.png */,
 				1FBF1F781A8B3F340015A527 /* bg_btn_white@2x.png */,
 				1FBF1F761A8B3F2D0015A527 /* bg_btn_white.png */,
 				1FBF1F661A8B3ABC0015A527 /* icon_cancel.png */,
@@ -491,6 +497,7 @@
 				1F2941521A88BE5800C0AE80 /* FriendsMainViewController.xib in Resources */,
 				1FBF1F561A8B07AE0015A527 /* BestivalLineupViewController.xib in Resources */,
 				1FBF1F741A8B3ABC0015A527 /* icon_twitter.png in Resources */,
+				1F1985591A8C978700769241 /* bestival_photo1@2x.png in Resources */,
 				1F2941451A889A4300C0AE80 /* MainSidebarViewController.xib in Resources */,
 				1FBF1F711A8B3ABC0015A527 /* icon_check@2x.png in Resources */,
 				1FBF1F6F1A8B3ABC0015A527 /* icon_cancel@2x.png in Resources */,
@@ -512,6 +519,7 @@
 				1FBF1F651A8B08160015A527 /* BestivalFriendViewController.xib in Resources */,
 				1F0937251A8507C30040E606 /* pin_grey@2x.png in Resources */,
 				1F0937231A8507C30040E606 /* icon_search@2x.png in Resources */,
+				1F1985581A8C978700769241 /* bestival_photo1.png in Resources */,
 				1F0937241A8507C30040E606 /* pin_grey.png in Resources */,
 				1F29415C1A88C0A600C0AE80 /* SettingsMainViewController.xib in Resources */,
 				1F29414A1A88BCBF00C0AE80 /* ChatsMainViewController.xib in Resources */,

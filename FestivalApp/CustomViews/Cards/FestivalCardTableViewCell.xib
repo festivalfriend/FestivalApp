@@ -14,14 +14,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="festival_photo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="dm6-bx-Ooh">
-                        <rect key="frame" x="10" y="11" width="300" height="168"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="festival_photo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="dm6-bx-Ooh">
+                        <rect key="frame" x="10" y="10" width="300" height="168"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="150" id="ctf-h8-hgb"/>
+                            <constraint firstAttribute="height" constant="168" id="ctf-h8-hgb"/>
                         </constraints>
                     </imageView>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g35-2b-ctZ">
-                        <rect key="frame" x="10" y="178" width="300" height="55"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g35-2b-ctZ">
+                        <rect key="frame" x="10" y="178" width="300" height="54"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12th - 15th June" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Re-Fh-CVa">
                                 <rect key="frame" x="8" y="30" width="232" height="20"/>

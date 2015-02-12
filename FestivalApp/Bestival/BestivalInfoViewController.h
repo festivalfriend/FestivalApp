@@ -10,13 +10,10 @@
 
 @interface BestivalInfoViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *m_mainImageView;
-@property (weak, nonatomic) IBOutlet UILabel *m_lblFestivalStatus;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *m_menuScrollView;
 @property (weak, nonatomic) IBOutlet UIView *m_menuView;
-@property (weak, nonatomic) IBOutlet UIScrollView *m_contentScrollView;
-@property (weak, nonatomic) IBOutlet UIView *m_contentView;
+@property (weak, nonatomic) IBOutlet UITableView *m_mainTableView;
 
 
 
@@ -27,7 +24,6 @@
 - (IBAction)onClickSeeDo:(id)sender;
 - (IBAction)onClickMap:(id)sender;
 - (IBAction)onClickFriends:(id)sender;
-- (IBAction)onManageFestival:(id)sender;
 
 
 @end

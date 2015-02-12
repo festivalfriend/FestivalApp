@@ -24,12 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.view setBackgroundColor:[UIColor colorWithRed:242/255.0f green:242/255.0f blue:242/255.0f alpha:1]];
-    
+
+    [self.mainTableView setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
     self.m_festivalArr = [[NSMutableArray alloc] init];
     self.m_curLoadType = IS_GETTING_ALL_FESTIVALS;
     
     self.mainTableView.delegate = self;
+    self.mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     //Activity Indicator
     self.m_activityIndicator.transform = CGAffineTransformMakeScale(3.0, 3.0);
@@ -99,6 +100,7 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"FestivalCardTableViewCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
+    
     
     return cell;
     
