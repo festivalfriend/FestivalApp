@@ -9,6 +9,7 @@
 #import "HomeFestivalViewController.h"
 #import "FestivalCardTableViewCell.h"
 #import "SearchFestivalViewController.h"
+#import "BestivalInfoViewController.h"
 
 #import "SWRevealViewController.h"
 #import "common_variables.h"
@@ -27,6 +28,8 @@
     
     self.m_festivalArr = [[NSMutableArray alloc] init];
     self.m_curLoadType = IS_GETTING_ALL_FESTIVALS;
+    
+    self.mainTableView.delegate = self;
     
     //Activity Indicator
     self.m_activityIndicator.transform = CGAffineTransformMakeScale(3.0, 3.0);
@@ -109,6 +112,11 @@
     //    return self.m_playerList.count;
     return self.m_festivalArr.count;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    BestivalInfoViewController *bestivalInfoVC = [[BestivalInfoViewController alloc] init];
+    [self.navigationController pushViewController:bestivalInfoVC animated:YES];
+}
+
 
 
 - (IBAction)onGetAllFestivals:(id)sender {

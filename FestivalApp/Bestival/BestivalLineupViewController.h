@@ -1,0 +1,13 @@
+//
+//  BestivalLineupViewController.h
+//  FestivalApp
+//
+//  Created by MyMac on 11/02/15.
+//  Copyright (c) 2015 MyMac. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface BestivalLineupViewController : UIViewController
+
+@end
