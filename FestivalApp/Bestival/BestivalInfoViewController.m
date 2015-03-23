@@ -9,6 +9,8 @@
 #import "BestivalInfoViewController.h"
 #import "AppDelegate.h"
 #import "SWRevealViewController.h"
+#import "SharedManager.h"
+#import "common_variables.h"
 
 #import "BInfoFirstTableViewCell.h"
 #import "BInfoSecondTableViewCell.h"
@@ -36,6 +38,7 @@
     [self.view setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
     [self.m_mainTableView setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
     self.m_mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -76,7 +79,8 @@
 
 - (IBAction)onClickInfo:(id)sender {
     NSLog(@"Info Button Clicked");
-    [self doButtonActions:sender actionIndex:0];
+    return;
+//    [self doButtonActions:sender actionIndex:0];
 }
 
 - (IBAction)onClickLineup:(id)sender {
@@ -124,7 +128,7 @@
             break;
     }
     
-    [self.navigationController pushViewController:controller animated:YES];
+    [self.navigationController pushViewController:controller animated:NO];
 }
 
 
@@ -142,124 +146,114 @@
 //    [separateLineView.layer setBorderWidth:2.0f];
 //    [cell addSubview:separateLineView];
     
-    UITableViewCell *cell;
     
     NSString *tableCellIdentifier = @"";
 
     switch (indexPath.row) {
         case 0:
+        {
             tableCellIdentifier = @"BInfoFirstTableViewCell";
-            cell = (BInfoFirstTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
+            BInfoFirstTableViewCell *cell = (BInfoFirstTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
             if(cell == nil){
                 NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
                 cell = [nib objectAtIndex:0];
             }
-            break;
+            [cell setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
             
+
+            return cell;
+            break;
+        }
         case 1:
+        {
             tableCellIdentifier = @"BInfoSecondTableViewCell";
-            cell = (BInfoSecondTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
+            BInfoSecondTableViewCell *cell = (BInfoSecondTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
             if(cell == nil){
                 NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
                 cell = [nib objectAtIndex:0];
             }
-            break;
+            [cell setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
             
+            if([SharedManager SharedManager].curFestival.b_myFestival)
+            {
+                [cell.m_btnAction setTag:1];//Already Added
+            }
+            else
+            {
+                [cell.m_btnAction setTag:0];
+            }
+            [cell.m_btnAction addTarget:self action:@selector(onCancelMyFestival:) forControlEvents:UIControlEventTouchUpInside];
+
+            return cell;
+            break;
+        }
         case 2:
+        {
             tableCellIdentifier = @"BInfoThirdTableViewCell";
-            cell = (BInfoThirdTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
+            BInfoThirdTableViewCell *cell = (BInfoThirdTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
             if(cell == nil){
                 NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
                 cell = [nib objectAtIndex:0];
             }
+            
+            [cell setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
+            
+            
+            if([SharedManager SharedManager].curFestival.b_tickets)
+            {
+                cell.m_imgTicketsStatus.hidden = NO;
+                [cell.m_lblTickets setText:@"Tickets"];
+            }
+            if([SharedManager SharedManager].curFestival.b_guide)
+            {
+                cell.m_imgGuideStatus.hidden = NO;
+                [cell.m_lblGuide setText:@"Guide"];
+            }
+            
+            [cell.m_btnTickets addTarget:self action:@selector(onClickTickets:) forControlEvents:UIControlEventTouchUpInside];
+            [cell.m_btnGuide addTarget:self action:@selector(onClickGuide:) forControlEvents:UIControlEventTouchUpInside];
+
+            return cell;
             break;
+        }
             
         case 3:
+        {
             tableCellIdentifier = @"BInfoForthTableViewCell";
-            cell = (BInfoForthTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
+            BInfoForthTableViewCell *cell = (BInfoForthTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
             if(cell == nil){
                 NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
                 cell = [nib objectAtIndex:0];
             }
+            [cell setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
+            
+            [cell.m_textView setText:[SharedManager SharedManager].curFestival.m_contents];
+
+            return cell;
             break;
+        }
         case 4:
+        {
             tableCellIdentifier = @"BInfoFifthTableViewCell";
-            cell = (BInfoFifthTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
+            BInfoFifthTableViewCell *cell = (BInfoFifthTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
             if(cell == nil){
                 NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
                 cell = [nib objectAtIndex:0];
             }
+            [cell setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
+            
+            [cell.m_btnSite addTarget:self action:@selector(onClickAddressButton:) forControlEvents:UIControlEventTouchUpInside];
+            [cell.m_btnFacebook addTarget:self action:@selector(onClickFacebook:) forControlEvents:UIControlEventTouchUpInside];
+            [cell.m_btnTwitter addTarget:self action:@selector(onClickTwitter:) forControlEvents:UIControlEventTouchUpInside];
+            
+            return cell;
             break;
+        }
         default:
-            cell = nil;
+            return nil;
             break;
     }
     
-    [cell setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
-    
-//    if(indexPath.row == 0)
-//    {
-//        
-//        UIImageView *imageView = [[UIImageView alloc] init];
-//        imageView.frame = CGRectMake(0, 0, cellContentView.frame.size.width, cellContentView.frame.size.height);
-//        [imageView setImage: [UIImage imageNamed: @"bestival_photo1"]];
-//        [cellContentView addSubview: imageView];
-//    }
-//    else if(indexPath.row == 1)
-//    {
-//        
-//        
-//        [cellContentView setBackgroundColor:[UIColor colorWithRed:143/255.0f green:195/255.0f blue:105/255.0f alpha:1.0f]];
-//        UILabel *lblStatus = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, cellContentView.frame.size.width, cellContentView.frame.size.height)];
-//        [lblStatus setText:@"My Festivals"];
-//        [lblStatus setTextAlignment:NSTextAlignmentCenter];
-//        [lblStatus setFont:[UIFont systemFontOfSize:17.0f]];
-//        [lblStatus setTextColor:[UIColor whiteColor]];
-//        
-//        
-//        UIButton *btnAction = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//        [btnAction addTarget:self action:@selector(onCancelMyFestival:) forControlEvents:UIControlEventTouchUpInside];
-////        [btnAction setTitle:@"" forState:UIControlStateNormal];
-//        [btnAction setImage:[UIImage imageNamed:@"icon_cancel"] forState:UIControlStateNormal];
-//        [btnAction setFrame:CGRectMake(cellContentView.frame.size.width-44,0, 44, 44)];
-//        [btnAction setTintColor:[UIColor whiteColor]];
-//        [cellContentView addSubview:lblStatus];
-//        [cellContentView addSubview:btnAction];
-//        
-//    }
-//    else if(indexPath.row == 2)
-//    {
-//
-//        UIButton *btnTickets = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//        [btnTickets addTarget:self action:@selector(onClickTickets:) forControlEvents:UIControlEventTouchUpInside];
-//        [btnTickets setTitle:@"Tickets - £195" forState:UIControlStateNormal];
-//        [btnTickets setBackgroundColor:[UIColor whiteColor]];
-//        [btnTickets setFrame:CGRectMake(0,0, cellContentView.frame.size.width/2, 44)];
-//        [btnTickets setTintColor:[UIColor colorWithRed:143/255.0f green:195/255.0f blue:105/255.0f alpha:1.0f]];
-//        [btnTickets.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
-//        
-//        UIButton *btnGuide = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//        [btnGuide addTarget:self action:@selector(onClickGuide:) forControlEvents:UIControlEventTouchUpInside];
-//        [btnGuide setTitle:@"Guide" forState:UIControlStateNormal];
-//        [btnGuide setImage:[UIImage imageNamed:@"icon_check"] forState:UIControlStateNormal];
-//        [btnGuide setBackgroundColor:[UIColor whiteColor]];
-//        [btnGuide setFrame:CGRectMake(cellContentView.frame.size.width/2+10,0, cellContentView.frame.size.width/2, 44)];
-//        [btnGuide setTintColor:[UIColor colorWithRed:143/255.0f green:195/255.0f blue:105/255.0f alpha:1.0f]];
-//        [btnGuide.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
-//        [cellContentView addSubview:btnGuide];
-//        
-//    }
-//    else if(indexPath.row == 3)
-//    {
-//
-//        UITextView *textView = [[UITextView alloc] init];
-//        
-//    }
-//    else return nil;
-
-
-    return cell;
-
 }
 -(CGFloat)getTextHeight:(NSString*)text width:(float)width fontSize: (float)fontSize
 {
@@ -275,21 +269,19 @@
     
     switch (indexPath.row) {
         case 0:
-            h_height = 168+10;
+            h_height = 178;
             break;
         case 1:
-            h_height = 44+10;
+            h_height = 54;
             break;
         case 2:
-            h_height = 45+10;
+            h_height = 55;
             break;
         case 3:
-            h_height = 50;
             h_height = [self getTextHeight:str_string width:[UIScreen mainScreen].bounds.size.width-20 fontSize:14.0f ];
-            NSLog(@"%f",h_height);
             break;
         case 4:
-            h_height = 45+10;
+            h_height = 55;
             break;
         default:
             break;
@@ -307,17 +299,71 @@
 #pragma mark -
 #pragma mark -Defined Buttons
 
--(void)onCancelMyFestival:(id)action
+-(void)onCancelMyFestival:(id)sender
 {
-    NSLog(@"My Festival Cancelled");
+    
+    UIButton *btnTarget = (UIButton *)sender;
+    BInfoSecondTableViewCell *cell = (BInfoSecondTableViewCell *)[self.m_mainTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+
+    [SharedManager SharedManager].curFestival.b_myFestival = ![SharedManager SharedManager].curFestival.b_myFestival;
+    
+    if(btnTarget.tag == 0)// Current status is "Add to My Festivals"
+    {
+        [btnTarget setTag:1];
+        [cell.m_lblStatus setText:@"My Festivals"];
+        [cell.m_btnAction setImage:[UIImage imageNamed:@"icon_cancel"] forState:UIControlStateNormal];
+        NSLog(@"**Added to My Festivals");
+
+    }
+    else{
+        [cell.m_lblStatus setText:@"Add to My Festivals"];
+        [cell.m_btnAction setImage:[UIImage imageNamed:@"icon_plus"] forState:UIControlStateNormal];
+        [btnTarget setTag:0];
+        NSLog(@"**Cancelled from My Festivals");
+    }
+    
+    
 }
--(void)onClickTickets:(id)action
+-(void)onClickTickets:(id)sender
 {
     NSLog(@"Tickets Button Clicked");
+    
+    if([SharedManager SharedManager].curFestival.b_tickets)
+        return;
+    BInfoThirdTableViewCell *cell = (BInfoThirdTableViewCell *)[self.m_mainTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]];
+
+    cell.m_imgTicketsStatus.hidden = NO;
+    [cell.m_lblTickets setText:@"Tickets"];
+
+    [SharedManager SharedManager].curFestival.b_tickets = ![SharedManager SharedManager].curFestival.b_tickets;
+    
+    
 }
--(void)onClickGuide:(id)action
+-(void)onClickGuide:(id)sender
 {
-    NSLog(@"Guide Button Clicked");
+    if([SharedManager SharedManager].curFestival.b_guide)
+        return;
+    BInfoThirdTableViewCell *cell = (BInfoThirdTableViewCell *)[self.m_mainTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]];
+    cell.m_imgGuideStatus.hidden = NO;
+    [cell.m_lblGuide setText:@"Guide"];
+    [SharedManager SharedManager].curFestival.b_guide = ![SharedManager SharedManager].curFestival.b_guide;
+
+}
+
+-(void)onClickAddressButton:(id)sender
+{
+    
+    NSLog(@"Address Button Clicked");
+}
+-(void)onClickFacebook:(id)sender
+{
+    
+    NSLog(@"Facebook Button Clicked");
+}
+-(void)onClickTwitter:(id)sender
+{
+    
+    NSLog(@"Twitter Button Clicked");
 }
 
 @end

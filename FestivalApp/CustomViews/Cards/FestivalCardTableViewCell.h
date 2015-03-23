@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *DurationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *UserLabel;
 @property (weak, nonatomic) IBOutlet UIView *InformationView;
+@property (weak, nonatomic) IBOutlet UIView *m_contentView;
 
 @end

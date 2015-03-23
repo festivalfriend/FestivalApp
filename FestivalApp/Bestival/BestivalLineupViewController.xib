@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BestivalLineupViewController">
             <connections>
-                <outlet property="m_mainTableView" destination="9rF-kf-J4Z" id="xmK-Fd-GkY"/>
+                <outlet property="m_lineupTableView" destination="Bip-kA-fhV" id="agv-Xr-hyV"/>
                 <outlet property="m_menuScrollView" destination="FQF-er-bTb" id="cGd-Qd-WXz"/>
                 <outlet property="m_menuView" destination="Zcd-po-nqR" id="l0O-Wz-bv9"/>
                 <outlet property="view" destination="GeF-QA-qy5" id="dGo-wn-2V1"/>
@@ -70,8 +70,8 @@
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQF-er-bTb" userLabel="Menu ScrollView">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <subviews>
-                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zcd-po-nqR" userLabel="Menu View">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zcd-po-nqR" userLabel="Menu View">
+                                    <rect key="frame" x="0.0" y="0.0" width="420" height="44"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0C-SH-TQU">
                                             <rect key="frame" x="20" y="0.0" width="50" height="40"/>
@@ -238,28 +238,42 @@
                         <constraint firstItem="FQF-er-bTb" firstAttribute="leading" secondItem="hqh-nN-sXG" secondAttribute="leading" id="yyy-JK-dex"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9rF-kf-J4Z">
-                    <rect key="frame" x="0.0" y="108" width="600" height="726"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bip-kA-fhV">
+                    <rect key="frame" x="0.0" y="108" width="600" height="728"/>
+                    <color key="backgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="separatorColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.94509810209274292" green="0.94509810209274292" blue="0.94509810209274292" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="sectionIndexTrackingBackgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="das-d4-lwM"/>
+                        <outlet property="delegate" destination="-1" id="DDW-kf-kyk"/>
+                    </connections>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="JOU-0d-Thb" secondAttribute="trailing" id="6Tl-7A-L3H"/>
-                <constraint firstAttribute="trailing" secondItem="9rF-kf-J4Z" secondAttribute="trailing" id="6qy-ci-IA4"/>
-                <constraint firstItem="9rF-kf-J4Z" firstAttribute="leading" secondItem="GeF-QA-qy5" secondAttribute="leading" id="8zZ-k6-K7O"/>
                 <constraint firstItem="hqh-nN-sXG" firstAttribute="leading" secondItem="GeF-QA-qy5" secondAttribute="leading" id="92f-K4-Opj"/>
-                <constraint firstItem="9rF-kf-J4Z" firstAttribute="top" secondItem="hqh-nN-sXG" secondAttribute="bottom" id="Lgi-gA-fko"/>
+                <constraint firstAttribute="bottom" secondItem="Bip-kA-fhV" secondAttribute="bottom" id="IiH-Ij-HOZ"/>
                 <constraint firstItem="JOU-0d-Thb" firstAttribute="leading" secondItem="GeF-QA-qy5" secondAttribute="leading" id="Pno-Vn-Zxy"/>
-                <constraint firstAttribute="bottom" secondItem="9rF-kf-J4Z" secondAttribute="bottom" constant="2" id="bDV-4H-qbw"/>
-                <constraint firstAttribute="centerX" secondItem="9rF-kf-J4Z" secondAttribute="centerX" id="gpf-wG-eVx"/>
+                <constraint firstAttribute="trailing" secondItem="Bip-kA-fhV" secondAttribute="trailing" id="caV-eG-iJL"/>
+                <constraint firstItem="Bip-kA-fhV" firstAttribute="leading" secondItem="GeF-QA-qy5" secondAttribute="leading" id="j2A-Lj-aH5"/>
                 <constraint firstItem="hqh-nN-sXG" firstAttribute="top" secondItem="JOU-0d-Thb" secondAttribute="bottom" id="jkP-JZ-H88"/>
                 <constraint firstAttribute="trailing" secondItem="hqh-nN-sXG" secondAttribute="trailing" id="o4G-nv-fjx"/>
+                <constraint firstItem="Bip-kA-fhV" firstAttribute="top" secondItem="hqh-nN-sXG" secondAttribute="bottom" id="oL3-tm-LGb"/>
                 <constraint firstItem="JOU-0d-Thb" firstAttribute="top" secondItem="GeF-QA-qy5" secondAttribute="top" id="t2j-be-Dgu"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="140" y="235"/>
+            <point key="canvasLocation" x="140" y="268"/>
         </view>
+        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="5Sj-Tc-9YD">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+            <color key="separatorColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+            <color key="sectionIndexBackgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+            <color key="sectionIndexTrackingBackgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+        </tableView>
     </objects>
     <resources>
         <image name="icon_back.png" width="12" height="21"/>

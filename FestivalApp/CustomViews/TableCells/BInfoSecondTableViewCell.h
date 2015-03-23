@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *m_lblStatus;
 @property (weak, nonatomic) IBOutlet UIButton *m_btnAction;
+@property (weak, nonatomic) IBOutlet UIView *m_contentView;
 
 @end

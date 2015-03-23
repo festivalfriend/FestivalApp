@@ -48,6 +48,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="m_btnAction" destination="xEh-IT-u4d" id="Mar-jq-Zq5"/>
+                <outlet property="m_contentView" destination="UlD-DS-O6S" id="xgm-R3-gxH"/>
                 <outlet property="m_lblStatus" destination="5Ho-3x-mNa" id="wPK-ca-B9b"/>
             </connections>
             <point key="canvasLocation" x="140" y="152"/>

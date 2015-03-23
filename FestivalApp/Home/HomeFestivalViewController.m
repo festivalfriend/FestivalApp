@@ -13,8 +13,14 @@
 
 #import "SWRevealViewController.h"
 #import "common_variables.h"
+#import "SharedManager.h"
+
+#import "FestivalObject.h"
 
 @interface HomeFestivalViewController ()
+{
+    
+}
 
 @end
 
@@ -37,37 +43,71 @@
     self.m_activityIndicator.hidden = NO;
     [self.m_activityIndicator startAnimating];
     
-
-
 }
 
--(void)viewDidAppear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:YES];
+    [super viewWillAppear:YES];
     
-    [self getFestivals];
+    [self getAllFestivals];
+    
 }
 
 #pragma mark -
 #pragma mark Models for getting Festivals
--(void)getFestivals
+-(void)getAllFestivals
+{
+    NSMutableArray *arrFestivals;
+
+    arrFestivals = [[NSMutableArray alloc] init];
+    
+    for (NSInteger i=0; i<10; i++) {
+        FestivalObject *tmpFestival;
+        tmpFestival = [[FestivalObject alloc] init];
+        tmpFestival.m_festivalID = i;
+        tmpFestival.m_mainTitle = [NSString stringWithFormat:@"Festival%ld",(long)i];
+        tmpFestival.m_userCnt = i;
+        tmpFestival.b_myFestival = NO;
+        
+        if(i%3==1)
+        {
+            tmpFestival.b_guide = YES;
+            tmpFestival.b_tickets = YES;
+            tmpFestival.b_myFestival = YES;
+        }
+        
+        [arrFestivals addObject:tmpFestival];
+    }
+    
+    [SharedManager SharedManager].arrFestivals = arrFestivals;
+
+    [self getMatchedFestivals];
+//    [self.mainTableView reloadData];
+}
+
+-(void)getMatchedFestivals
 {
     NSInteger f_type;
     f_type = self.m_curLoadType;
-    if(f_type==IS_GETTING_ALL_FESTIVALS)
+    
+    self.m_festivalArr = [[NSMutableArray alloc] init];
+    if(f_type == IS_GETTING_ALL_FESTIVALS)
     {
-        [self.m_festivalArr addObject:@"aa"];
-        [self.m_festivalArr addObject:@"aa"];
-        [self.m_festivalArr addObject:@"aa"];
+        self.m_festivalArr = [SharedManager SharedManager].arrFestivals;
     }
-    else if(f_type==IS_GETTING_MY_FESTIVALS)
+    else if(f_type == IS_GETTING_MY_FESTIVALS)
     {
-        [self.m_festivalArr addObject:@"aa"];
-        
+        for (FestivalObject *tmpFestival in [SharedManager SharedManager].arrFestivals) {
+            if(tmpFestival.b_myFestival == YES)
+            {
+                [self.m_festivalArr addObject:tmpFestival];
+            }
+        }
     }
     
     [self.mainTableView reloadData];
 }
+
 
 #pragma mark -
 #pragma mark NavigationView Delegate
@@ -101,7 +141,17 @@
         cell = [nib objectAtIndex:0];
     }
     
+    FestivalObject *tmpFestival = [self.m_festivalArr objectAtIndex:indexPath.row];
     
+    if(tmpFestival.b_myFestival)
+    {
+        [cell.TitleLabel setTextColor:[UIColor colorWithRed:143/255.0f green:195/255.0f blue:105/255.0f alpha:0.75f]];
+    }
+
+    cell.TitleLabel.text = tmpFestival.m_mainTitle;
+    cell.UserLabel.text = [NSString stringWithFormat:@"%d",tmpFestival.m_userCnt];
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
     
 }
@@ -115,11 +165,13 @@
     return self.m_festivalArr.count;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [SharedManager SharedManager].curFestival = [self.m_festivalArr objectAtIndex:indexPath.row];
+    
     BestivalInfoViewController *bestivalInfoVC = [[BestivalInfoViewController alloc] init];
     [self.navigationController pushViewController:bestivalInfoVC animated:YES];
+    
 }
-
-
 
 - (IBAction)onGetAllFestivals:(id)sender {
 
@@ -129,10 +181,13 @@
     }
     self.m_curLoadType = IS_GETTING_ALL_FESTIVALS;
     
+    [self getMatchedFestivals];
     self.m_whiteViewAll.hidden = NO;
     self.m_whiteViewMyFestivals.hidden = YES;
     [self.m_btnAll.titleLabel setFont:[UIFont boldSystemFontOfSize:17.0f]];
     [self.m_btnMyFestival.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
+    
+    
 }
 - (IBAction)onGetMyFestivals:(id)sender {
     if(self.m_curLoadType == IS_GETTING_MY_FESTIVALS)
@@ -141,6 +196,7 @@
     }
     self.m_curLoadType = IS_GETTING_MY_FESTIVALS;
 
+    [self getMatchedFestivals];
     
     self.m_whiteViewAll.hidden = YES;
     self.m_whiteViewMyFestivals.hidden = NO;
@@ -152,7 +208,6 @@
 - (IBAction)onSearch:(id)sender {
     SearchFestivalViewController *searchFestivalVC = [[SearchFestivalViewController alloc] init];
     [self.navigationController pushViewController:searchFestivalVC animated:YES];
-
 }
 
 - (IBAction)onMenu:(id)sender {

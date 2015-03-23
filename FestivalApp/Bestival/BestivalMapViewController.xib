@@ -227,6 +227,9 @@
                                 <constraint firstItem="R2d-ru-cAt" firstAttribute="leading" secondItem="mIf-zv-uqV" secondAttribute="leading" id="Tdc-5Q-Hsa"/>
                                 <constraint firstAttribute="trailing" secondItem="R2d-ru-cAt" secondAttribute="trailing" id="icb-Cz-ebE"/>
                             </constraints>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="DbQ-cP-fUb"/>
+                            </connections>
                         </scrollView>
                     </subviews>
                     <color key="backgroundColor" red="0.66666668650000005" green="0.83529418710000003" blue="0.53725492949999998" alpha="1" colorSpace="deviceRGB"/>

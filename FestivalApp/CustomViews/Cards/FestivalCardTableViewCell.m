@@ -12,12 +12,19 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    [self setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
     
-    UIView *separatorLineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.InformationView.frame.size.height-1, [UIScreen mainScreen].bounds.size.width-20, 2)];
-    [separatorLineView.layer setBorderWidth:1.0f];
-    [separatorLineView.layer setBorderColor:[UIColor colorWithRed:210/255.0f green:210/255.0f blue:210/255.0f alpha:1].CGColor];
-    [self.InformationView addSubview:separatorLineView];
+    [self drawRoundRectwithShadow:self.m_contentView];
+}
+
+-(void)drawRoundRectwithShadow : (UIView *)m_view
+{
+    [m_view.layer setCornerRadius:4.0f];
+    [m_view.layer setShadowColor:[UIColor grayColor].CGColor];
+    [m_view.layer setShadowOpacity:0.5];
+    [m_view.layer setShadowRadius:1.0];
+    [m_view.layer setShadowOffset:CGSizeMake(0, 1.0)];
+    
+    self.ImageView.layer.masksToBounds = YES;
     
 }
 

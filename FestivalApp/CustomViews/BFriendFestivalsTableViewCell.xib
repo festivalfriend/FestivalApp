@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BFriendFestivalsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czW-LY-22L">
+                        <rect key="frame" x="10" y="10" width="300" height="71"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bestival" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngm-GM-Jw3">
+                                <rect key="frame" x="68" y="10" width="149" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4th - 7th September" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqM-M5-N3U">
+                                <rect key="frame" x="68" y="33" width="149" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin_grey.png" translatesAutoresizingMaskIntoConstraints="NO" id="4pf-mS-tJO">
+                                <rect key="frame" x="272" y="25" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="T94-GY-q6w"/>
+                                    <constraint firstAttribute="height" constant="20" id="UD9-DA-ZZz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pa-fr-VCR">
+                                <rect key="frame" x="219" y="25" width="50" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="XRB-mx-ZwH"/>
+                                    <constraint firstAttribute="height" constant="20" id="kGv-F0-vb1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="festival_photo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="KWK-Bj-UPg">
+                                <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JUN-Lt-noC"/>
+                                    <constraint firstAttribute="width" constant="50" id="aO6-IN-82O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ngm-GM-Jw3" firstAttribute="leading" secondItem="KWK-Bj-UPg" secondAttribute="trailing" constant="8" id="8pY-KM-RaP"/>
+                            <constraint firstAttribute="centerY" secondItem="4pf-mS-tJO" secondAttribute="centerY" constant="0.5" id="AYX-4U-zV6"/>
+                            <constraint firstItem="4pf-mS-tJO" firstAttribute="leading" secondItem="6Pa-fr-VCR" secondAttribute="trailing" constant="3" id="EkG-5X-o5m"/>
+                            <constraint firstItem="NqM-M5-N3U" firstAttribute="leading" secondItem="KWK-Bj-UPg" secondAttribute="trailing" constant="8" id="TH7-6i-0I8"/>
+                            <constraint firstAttribute="centerY" secondItem="6Pa-fr-VCR" secondAttribute="centerY" constant="0.5" id="Xdl-ff-Qct"/>
+                            <constraint firstItem="KWK-Bj-UPg" firstAttribute="leading" secondItem="czW-LY-22L" secondAttribute="leading" constant="10" id="YtC-GE-PlX"/>
+                            <constraint firstItem="6Pa-fr-VCR" firstAttribute="leading" secondItem="NqM-M5-N3U" secondAttribute="trailing" constant="2" id="Yxe-4K-83d"/>
+                            <constraint firstItem="ngm-GM-Jw3" firstAttribute="top" secondItem="KWK-Bj-UPg" secondAttribute="top" id="pBD-FA-bZq"/>
+                            <constraint firstItem="6Pa-fr-VCR" firstAttribute="leading" secondItem="ngm-GM-Jw3" secondAttribute="trailing" constant="2" id="qFg-VO-CVY"/>
+                            <constraint firstItem="NqM-M5-N3U" firstAttribute="top" secondItem="ngm-GM-Jw3" secondAttribute="bottom" constant="2" id="wUc-Ma-OVk"/>
+                            <constraint firstAttribute="trailing" secondItem="4pf-mS-tJO" secondAttribute="trailing" constant="8" id="z1E-FP-rQE"/>
+                            <constraint firstItem="KWK-Bj-UPg" firstAttribute="top" secondItem="czW-LY-22L" secondAttribute="top" constant="10" id="z9I-7t-cxY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.96640641019999995" green="0.96139912309999997" blue="0.97141369730000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="czW-LY-22L" secondAttribute="bottom" constant="-8" id="BcL-lf-3aw"/>
+                    <constraint firstItem="czW-LY-22L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Ly4-H2-aXf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="czW-LY-22L" secondAttribute="trailing" constant="2" id="Pe7-cG-FT3"/>
+                    <constraint firstItem="czW-LY-22L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="VRo-97-aTX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgViewFestival" destination="KWK-Bj-UPg" id="PWo-dQ-yMZ"/>
+                <outlet property="lbFestivalDuration" destination="NqM-M5-N3U" id="c1P-us-CNT"/>
+                <outlet property="lbFestivalTitle" destination="ngm-GM-Jw3" id="dW1-J3-KUU"/>
+                <outlet property="lbUserCount" destination="6Pa-fr-VCR" id="FFy-eu-bLk"/>
+                <outlet property="viewContent" destination="czW-LY-22L" id="JSc-Om-E9U"/>
+            </connections>
+            <point key="canvasLocation" x="351" y="300"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="festival_photo1.png" width="300" height="168"/>
+        <image name="pin_grey.png" width="20" height="20"/>
+    </resources>
+</document>

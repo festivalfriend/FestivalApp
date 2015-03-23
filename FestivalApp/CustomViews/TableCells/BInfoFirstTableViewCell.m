@@ -18,6 +18,8 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+    
+    self.m_mainImageView.layer.masksToBounds = YES;
 }
 
 @end

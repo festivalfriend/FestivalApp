@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    
+    [self.m_contentView.layer setCornerRadius:3.0f];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -19,5 +21,7 @@
 
     // Configure the view for the selected state
 }
+
+
 
 @end

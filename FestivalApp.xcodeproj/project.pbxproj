@@ -36,10 +36,26 @@
 		1F1690381A8E31DC00D7F134 /* BInfoForthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1690361A8E31DC00D7F134 /* BInfoForthTableViewCell.xib */; };
 		1F16903C1A8E31F100D7F134 /* BInfoFifthTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F16903A1A8E31F100D7F134 /* BInfoFifthTableViewCell.m */; };
 		1F16903D1A8E31F100D7F134 /* BInfoFifthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F16903B1A8E31F100D7F134 /* BInfoFifthTableViewCell.xib */; };
+		1F1701251A8EF41D00D6F9B2 /* icon_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1701231A8EF41D00D6F9B2 /* icon_plus.png */; };
+		1F1701261A8EF41D00D6F9B2 /* icon_plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1701241A8EF41D00D6F9B2 /* icon_plus@2x.png */; };
+		1F17012F1A8FF75300D6F9B2 /* icon_cancel_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1701271A8FF75300D6F9B2 /* icon_cancel_green.png */; };
+		1F1701301A8FF75300D6F9B2 /* icon_cancel_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1701281A8FF75300D6F9B2 /* icon_cancel_green@2x.png */; };
+		1F1701311A8FF75300D6F9B2 /* icon_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1701291A8FF75300D6F9B2 /* icon_location.png */; };
+		1F1701321A8FF75300D6F9B2 /* icon_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F17012A1A8FF75300D6F9B2 /* icon_location@2x.png */; };
+		1F1701331A8FF75300D6F9B2 /* icon_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F17012B1A8FF75300D6F9B2 /* icon_more.png */; };
+		1F1701341A8FF75300D6F9B2 /* icon_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F17012C1A8FF75300D6F9B2 /* icon_more@2x.png */; };
+		1F1701351A8FF75300D6F9B2 /* lineup_photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F17012D1A8FF75300D6F9B2 /* lineup_photo1.png */; };
+		1F1701361A8FF75300D6F9B2 /* lineup_photo1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F17012E1A8FF75300D6F9B2 /* lineup_photo1@2x.png */; };
+		1F17013A1A8FF99E00D6F9B2 /* BLineupListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1701381A8FF99E00D6F9B2 /* BLineupListTableViewCell.m */; };
+		1F17013B1A8FF99E00D6F9B2 /* BLineupListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1701391A8FF99E00D6F9B2 /* BLineupListTableViewCell.xib */; };
+		1F17013F1A902CF300D6F9B2 /* BLineupStageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F17013D1A902CF300D6F9B2 /* BLineupStageTableViewCell.m */; };
+		1F1701401A902CF300D6F9B2 /* BLineupStageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F17013E1A902CF300D6F9B2 /* BLineupStageTableViewCell.xib */; };
 		1F1985581A8C978700769241 /* bestival_photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1985561A8C978700769241 /* bestival_photo1.png */; };
 		1F1985591A8C978700769241 /* bestival_photo1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1985571A8C978700769241 /* bestival_photo1@2x.png */; };
 		1F1B50CF1A8A52900056A6E5 /* BestivalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B50CD1A8A52900056A6E5 /* BestivalInfoViewController.m */; };
 		1F1B50D01A8A52900056A6E5 /* BestivalInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B50CE1A8A52900056A6E5 /* BestivalInfoViewController.xib */; };
+		1F2838ED1A9AD674006FACBB /* bestival_photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2838EB1A9AD674006FACBB /* bestival_photo2.png */; };
+		1F2838EE1A9AD674006FACBB /* bestival_photo2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2838EC1A9AD674006FACBB /* bestival_photo2@2x.png */; };
 		1F2941091A885B0A00C0AE80 /* SearchFestivalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2941071A885B0A00C0AE80 /* SearchFestivalViewController.m */; };
 		1F29410A1A885B0A00C0AE80 /* SearchFestivalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2941081A885B0A00C0AE80 /* SearchFestivalViewController.xib */; };
 		1F29412B1A88601A00C0AE80 /* FestivalCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2941291A88601A00C0AE80 /* FestivalCardTableViewCell.m */; };
@@ -55,6 +71,30 @@
 		1F2941561A88C06700C0AE80 /* icon_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2941541A88C06700C0AE80 /* icon_back@2x.png */; };
 		1F29415B1A88C0A600C0AE80 /* SettingsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2941591A88C0A600C0AE80 /* SettingsMainViewController.m */; };
 		1F29415C1A88C0A600C0AE80 /* SettingsMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F29415A1A88C0A600C0AE80 /* SettingsMainViewController.xib */; };
+		1F3DD91F1AB91E47006F25C2 /* BFriendListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DD91D1AB91E47006F25C2 /* BFriendListTableViewCell.m */; };
+		1F3DD9201AB91E47006F25C2 /* BFriendListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD91E1AB91E47006F25C2 /* BFriendListTableViewCell.xib */; };
+		1F3DD9291AB92207006F25C2 /* user1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9231AB92207006F25C2 /* user1.png */; };
+		1F3DD92A1AB92207006F25C2 /* user1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9241AB92207006F25C2 /* user1@2x.png */; };
+		1F3DD92B1AB92207006F25C2 /* user2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9251AB92207006F25C2 /* user2.png */; };
+		1F3DD92C1AB92207006F25C2 /* user2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9261AB92207006F25C2 /* user2@2x.png */; };
+		1F3DD9301AB925C9006F25C2 /* FriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DD92E1AB925C9006F25C2 /* FriendDetailViewController.m */; };
+		1F3DD9311AB925C9006F25C2 /* FriendDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD92F1AB925C9006F25C2 /* FriendDetailViewController.xib */; };
+		1F3DD9381AB92A1D006F25C2 /* icon_location_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9321AB92A1D006F25C2 /* icon_location_checked.png */; };
+		1F3DD9391AB92A1D006F25C2 /* icon_location_checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9331AB92A1D006F25C2 /* icon_location_checked@2x.png */; };
+		1F3DD93A1AB92A1D006F25C2 /* icon_location_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9341AB92A1D006F25C2 /* icon_location_left.png */; };
+		1F3DD93B1AB92A1D006F25C2 /* icon_location_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9351AB92A1D006F25C2 /* icon_location_left@2x.png */; };
+		1F3DD93C1AB92A1D006F25C2 /* icon_location_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9361AB92A1D006F25C2 /* icon_location_right.png */; };
+		1F3DD93D1AB92A1D006F25C2 /* icon_location_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9371AB92A1D006F25C2 /* icon_location_right@2x.png */; };
+		1F3DD9401AB92AA3006F25C2 /* icon_location_both.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD93E1AB92AA3006F25C2 /* icon_location_both.png */; };
+		1F3DD9411AB92AA3006F25C2 /* icon_location_both@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD93F1AB92AA3006F25C2 /* icon_location_both@2x.png */; };
+		1F3DD9451AB97629006F25C2 /* BFriendFestivalsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DD9431AB97629006F25C2 /* BFriendFestivalsTableViewCell.m */; };
+		1F3DD9461AB97629006F25C2 /* BFriendFestivalsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9441AB97629006F25C2 /* BFriendFestivalsTableViewCell.xib */; };
+		1F41D5A91ABBBFF300EB1208 /* ArtistsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41D5A81ABBBFF300EB1208 /* ArtistsObject.m */; };
+		1F41D5AC1ABBC07900EB1208 /* StageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41D5AB1ABBC07900EB1208 /* StageObject.m */; };
+		1F6038B71A949D34000FA4B1 /* BLineupButtonsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6038B51A949D34000FA4B1 /* BLineupButtonsTableViewCell.m */; };
+		1F6038B81A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6038B61A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib */; };
+		1FB48F6C1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB48F6A1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m */; };
+		1FB48F6D1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB48F6B1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib */; };
 		1FBF1F551A8B07AE0015A527 /* BestivalLineupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF1F531A8B07AE0015A527 /* BestivalLineupViewController.m */; };
 		1FBF1F561A8B07AE0015A527 /* BestivalLineupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF1F541A8B07AE0015A527 /* BestivalLineupViewController.xib */; };
 		1FBF1F5A1A8B07C90015A527 /* BestivalSeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF1F581A8B07C90015A527 /* BestivalSeeViewController.m */; };
@@ -73,6 +113,14 @@
 		1FBF1F751A8B3ABC0015A527 /* icon_twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF1F6D1A8B3ABC0015A527 /* icon_twitter@2x.png */; };
 		1FBF1F771A8B3F2D0015A527 /* bg_btn_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF1F761A8B3F2D0015A527 /* bg_btn_white.png */; };
 		1FBF1F791A8B3F340015A527 /* bg_btn_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF1F781A8B3F340015A527 /* bg_btn_white@2x.png */; };
+		1FC457921A943BE900FF631C /* BLineupMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC457901A943BE900FF631C /* BLineupMoreTableViewCell.m */; };
+		1FC457931A943BE900FF631C /* BLineupMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC457911A943BE900FF631C /* BLineupMoreTableViewCell.xib */; };
+		1FC68AF41A9830DC00A10A15 /* FestivalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC68AF31A9830DC00A10A15 /* FestivalObject.m */; };
+		1FC68AF71A9835C200A10A15 /* SharedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC68AF61A9835C200A10A15 /* SharedManager.m */; };
+		1FC68AFE1A98380700A10A15 /* BSeeCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC68AFC1A98380700A10A15 /* BSeeCategoryTableViewCell.m */; };
+		1FC68AFF1A98380700A10A15 /* BSeeCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC68AFD1A98380700A10A15 /* BSeeCategoryTableViewCell.xib */; };
+		1FC68B031A988A6A00A10A15 /* BSeePhotoCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC68B011A988A6A00A10A15 /* BSeePhotoCardTableViewCell.m */; };
+		1FC68B041A988A6A00A10A15 /* BSeePhotoCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC68B021A988A6A00A10A15 /* BSeePhotoCardTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,11 +174,29 @@
 		1F1690391A8E31F100D7F134 /* BInfoFifthTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BInfoFifthTableViewCell.h; path = TableCells/BInfoFifthTableViewCell.h; sourceTree = "<group>"; };
 		1F16903A1A8E31F100D7F134 /* BInfoFifthTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BInfoFifthTableViewCell.m; path = TableCells/BInfoFifthTableViewCell.m; sourceTree = "<group>"; };
 		1F16903B1A8E31F100D7F134 /* BInfoFifthTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BInfoFifthTableViewCell.xib; path = TableCells/BInfoFifthTableViewCell.xib; sourceTree = "<group>"; };
+		1F1701231A8EF41D00D6F9B2 /* icon_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_plus.png; sourceTree = "<group>"; };
+		1F1701241A8EF41D00D6F9B2 /* icon_plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_plus@2x.png"; sourceTree = "<group>"; };
+		1F1701271A8FF75300D6F9B2 /* icon_cancel_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_cancel_green.png; sourceTree = "<group>"; };
+		1F1701281A8FF75300D6F9B2 /* icon_cancel_green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_cancel_green@2x.png"; sourceTree = "<group>"; };
+		1F1701291A8FF75300D6F9B2 /* icon_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_location.png; sourceTree = "<group>"; };
+		1F17012A1A8FF75300D6F9B2 /* icon_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_location@2x.png"; sourceTree = "<group>"; };
+		1F17012B1A8FF75300D6F9B2 /* icon_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_more.png; sourceTree = "<group>"; };
+		1F17012C1A8FF75300D6F9B2 /* icon_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_more@2x.png"; sourceTree = "<group>"; };
+		1F17012D1A8FF75300D6F9B2 /* lineup_photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lineup_photo1.png; sourceTree = "<group>"; };
+		1F17012E1A8FF75300D6F9B2 /* lineup_photo1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lineup_photo1@2x.png"; sourceTree = "<group>"; };
+		1F1701371A8FF99E00D6F9B2 /* BLineupListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLineupListTableViewCell.h; path = TableCells/BLineupListTableViewCell.h; sourceTree = "<group>"; };
+		1F1701381A8FF99E00D6F9B2 /* BLineupListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLineupListTableViewCell.m; path = TableCells/BLineupListTableViewCell.m; sourceTree = "<group>"; };
+		1F1701391A8FF99E00D6F9B2 /* BLineupListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BLineupListTableViewCell.xib; path = TableCells/BLineupListTableViewCell.xib; sourceTree = "<group>"; };
+		1F17013C1A902CF300D6F9B2 /* BLineupStageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLineupStageTableViewCell.h; path = TableCells/BLineupStageTableViewCell.h; sourceTree = "<group>"; };
+		1F17013D1A902CF300D6F9B2 /* BLineupStageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLineupStageTableViewCell.m; path = TableCells/BLineupStageTableViewCell.m; sourceTree = "<group>"; };
+		1F17013E1A902CF300D6F9B2 /* BLineupStageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BLineupStageTableViewCell.xib; path = TableCells/BLineupStageTableViewCell.xib; sourceTree = "<group>"; };
 		1F1985561A8C978700769241 /* bestival_photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bestival_photo1.png; sourceTree = "<group>"; };
 		1F1985571A8C978700769241 /* bestival_photo1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bestival_photo1@2x.png"; sourceTree = "<group>"; };
 		1F1B50CC1A8A52900056A6E5 /* BestivalInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BestivalInfoViewController.h; path = Bestival/BestivalInfoViewController.h; sourceTree = "<group>"; };
 		1F1B50CD1A8A52900056A6E5 /* BestivalInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BestivalInfoViewController.m; path = Bestival/BestivalInfoViewController.m; sourceTree = "<group>"; };
 		1F1B50CE1A8A52900056A6E5 /* BestivalInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BestivalInfoViewController.xib; path = Bestival/BestivalInfoViewController.xib; sourceTree = "<group>"; };
+		1F2838EB1A9AD674006FACBB /* bestival_photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bestival_photo2.png; sourceTree = "<group>"; };
+		1F2838EC1A9AD674006FACBB /* bestival_photo2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bestival_photo2@2x.png"; sourceTree = "<group>"; };
 		1F2941051A88526A00C0AE80 /* common_variables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = common_variables.h; path = Common/common_variables.h; sourceTree = "<group>"; };
 		1F2941061A885B0A00C0AE80 /* SearchFestivalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchFestivalViewController.h; path = Home/SearchFestivalViewController.h; sourceTree = "<group>"; };
 		1F2941071A885B0A00C0AE80 /* SearchFestivalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchFestivalViewController.m; path = Home/SearchFestivalViewController.m; sourceTree = "<group>"; };
@@ -154,6 +220,37 @@
 		1F2941581A88C0A600C0AE80 /* SettingsMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsMainViewController.h; path = Home/SettingsMainViewController.h; sourceTree = "<group>"; };
 		1F2941591A88C0A600C0AE80 /* SettingsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsMainViewController.m; path = Home/SettingsMainViewController.m; sourceTree = "<group>"; };
 		1F29415A1A88C0A600C0AE80 /* SettingsMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsMainViewController.xib; path = Home/SettingsMainViewController.xib; sourceTree = "<group>"; };
+		1F3DD91C1AB91E47006F25C2 /* BFriendListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BFriendListTableViewCell.h; path = TableCells/BFriendListTableViewCell.h; sourceTree = "<group>"; };
+		1F3DD91D1AB91E47006F25C2 /* BFriendListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BFriendListTableViewCell.m; path = TableCells/BFriendListTableViewCell.m; sourceTree = "<group>"; };
+		1F3DD91E1AB91E47006F25C2 /* BFriendListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BFriendListTableViewCell.xib; path = TableCells/BFriendListTableViewCell.xib; sourceTree = "<group>"; };
+		1F3DD9231AB92207006F25C2 /* user1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user1.png; sourceTree = "<group>"; };
+		1F3DD9241AB92207006F25C2 /* user1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user1@2x.png"; sourceTree = "<group>"; };
+		1F3DD9251AB92207006F25C2 /* user2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user2.png; sourceTree = "<group>"; };
+		1F3DD9261AB92207006F25C2 /* user2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user2@2x.png"; sourceTree = "<group>"; };
+		1F3DD92D1AB925C9006F25C2 /* FriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendDetailViewController.h; path = Bestival/FriendDetailViewController.h; sourceTree = "<group>"; };
+		1F3DD92E1AB925C9006F25C2 /* FriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendDetailViewController.m; path = Bestival/FriendDetailViewController.m; sourceTree = "<group>"; };
+		1F3DD92F1AB925C9006F25C2 /* FriendDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FriendDetailViewController.xib; path = Bestival/FriendDetailViewController.xib; sourceTree = "<group>"; };
+		1F3DD9321AB92A1D006F25C2 /* icon_location_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_location_checked.png; sourceTree = "<group>"; };
+		1F3DD9331AB92A1D006F25C2 /* icon_location_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_location_checked@2x.png"; sourceTree = "<group>"; };
+		1F3DD9341AB92A1D006F25C2 /* icon_location_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_location_left.png; sourceTree = "<group>"; };
+		1F3DD9351AB92A1D006F25C2 /* icon_location_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_location_left@2x.png"; sourceTree = "<group>"; };
+		1F3DD9361AB92A1D006F25C2 /* icon_location_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_location_right.png; sourceTree = "<group>"; };
+		1F3DD9371AB92A1D006F25C2 /* icon_location_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_location_right@2x.png"; sourceTree = "<group>"; };
+		1F3DD93E1AB92AA3006F25C2 /* icon_location_both.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_location_both.png; sourceTree = "<group>"; };
+		1F3DD93F1AB92AA3006F25C2 /* icon_location_both@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_location_both@2x.png"; sourceTree = "<group>"; };
+		1F3DD9421AB97629006F25C2 /* BFriendFestivalsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFriendFestivalsTableViewCell.h; sourceTree = "<group>"; };
+		1F3DD9431AB97629006F25C2 /* BFriendFestivalsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFriendFestivalsTableViewCell.m; sourceTree = "<group>"; };
+		1F3DD9441AB97629006F25C2 /* BFriendFestivalsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFriendFestivalsTableViewCell.xib; sourceTree = "<group>"; };
+		1F41D5A71ABBBFF300EB1208 /* ArtistsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistsObject.h; path = CustomObjects/ArtistsObject.h; sourceTree = "<group>"; };
+		1F41D5A81ABBBFF300EB1208 /* ArtistsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistsObject.m; path = CustomObjects/ArtistsObject.m; sourceTree = "<group>"; };
+		1F41D5AA1ABBC07900EB1208 /* StageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StageObject.h; path = CustomObjects/StageObject.h; sourceTree = "<group>"; };
+		1F41D5AB1ABBC07900EB1208 /* StageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StageObject.m; path = CustomObjects/StageObject.m; sourceTree = "<group>"; };
+		1F6038B41A949D34000FA4B1 /* BLineupButtonsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLineupButtonsTableViewCell.h; path = TableCells/BLineupButtonsTableViewCell.h; sourceTree = "<group>"; };
+		1F6038B51A949D34000FA4B1 /* BLineupButtonsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLineupButtonsTableViewCell.m; path = TableCells/BLineupButtonsTableViewCell.m; sourceTree = "<group>"; };
+		1F6038B61A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BLineupButtonsTableViewCell.xib; path = TableCells/BLineupButtonsTableViewCell.xib; sourceTree = "<group>"; };
+		1FB48F691A9E2BBB00D8421E /* BestivalSeeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BestivalSeeDetailViewController.h; path = Bestival/BestivalSeeDetailViewController.h; sourceTree = "<group>"; };
+		1FB48F6A1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BestivalSeeDetailViewController.m; path = Bestival/BestivalSeeDetailViewController.m; sourceTree = "<group>"; };
+		1FB48F6B1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BestivalSeeDetailViewController.xib; path = Bestival/BestivalSeeDetailViewController.xib; sourceTree = "<group>"; };
 		1FBF1F521A8B07AE0015A527 /* BestivalLineupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BestivalLineupViewController.h; path = Bestival/BestivalLineupViewController.h; sourceTree = "<group>"; };
 		1FBF1F531A8B07AE0015A527 /* BestivalLineupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BestivalLineupViewController.m; path = Bestival/BestivalLineupViewController.m; sourceTree = "<group>"; };
 		1FBF1F541A8B07AE0015A527 /* BestivalLineupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BestivalLineupViewController.xib; path = Bestival/BestivalLineupViewController.xib; sourceTree = "<group>"; };
@@ -176,6 +273,19 @@
 		1FBF1F6D1A8B3ABC0015A527 /* icon_twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_twitter@2x.png"; sourceTree = "<group>"; };
 		1FBF1F761A8B3F2D0015A527 /* bg_btn_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_btn_white.png; sourceTree = "<group>"; };
 		1FBF1F781A8B3F340015A527 /* bg_btn_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_btn_white@2x.png"; sourceTree = "<group>"; };
+		1FC4578F1A943BE900FF631C /* BLineupMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLineupMoreTableViewCell.h; path = TableCells/BLineupMoreTableViewCell.h; sourceTree = "<group>"; };
+		1FC457901A943BE900FF631C /* BLineupMoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLineupMoreTableViewCell.m; path = TableCells/BLineupMoreTableViewCell.m; sourceTree = "<group>"; };
+		1FC457911A943BE900FF631C /* BLineupMoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BLineupMoreTableViewCell.xib; path = TableCells/BLineupMoreTableViewCell.xib; sourceTree = "<group>"; };
+		1FC68AF21A9830DC00A10A15 /* FestivalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FestivalObject.h; path = CustomObjects/FestivalObject.h; sourceTree = "<group>"; };
+		1FC68AF31A9830DC00A10A15 /* FestivalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FestivalObject.m; path = CustomObjects/FestivalObject.m; sourceTree = "<group>"; };
+		1FC68AF51A9835C200A10A15 /* SharedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharedManager.h; path = CustomObjects/SharedManager.h; sourceTree = "<group>"; };
+		1FC68AF61A9835C200A10A15 /* SharedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SharedManager.m; path = CustomObjects/SharedManager.m; sourceTree = "<group>"; };
+		1FC68AFB1A98380700A10A15 /* BSeeCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSeeCategoryTableViewCell.h; path = TableCells/BSeeCategoryTableViewCell.h; sourceTree = "<group>"; };
+		1FC68AFC1A98380700A10A15 /* BSeeCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSeeCategoryTableViewCell.m; path = TableCells/BSeeCategoryTableViewCell.m; sourceTree = "<group>"; };
+		1FC68AFD1A98380700A10A15 /* BSeeCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BSeeCategoryTableViewCell.xib; path = TableCells/BSeeCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		1FC68B001A988A6A00A10A15 /* BSeePhotoCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSeePhotoCardTableViewCell.h; path = TableCells/BSeePhotoCardTableViewCell.h; sourceTree = "<group>"; };
+		1FC68B011A988A6A00A10A15 /* BSeePhotoCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSeePhotoCardTableViewCell.m; path = TableCells/BSeePhotoCardTableViewCell.m; sourceTree = "<group>"; };
+		1FC68B021A988A6A00A10A15 /* BSeePhotoCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BSeePhotoCardTableViewCell.xib; path = TableCells/BSeePhotoCardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +327,7 @@
 		1F0936D41A8503130040E606 /* FestivalApp */ = {
 			isa = PBXGroup;
 			children = (
+				1FC68AEE1A98307A00A10A15 /* Common Objects */,
 				1F2941041A88524600C0AE80 /* Common */,
 				1F17E03C1A85B94C00F23177 /* CustomViews */,
 				1F0937141A8507660040E606 /* AppScreens */,
@@ -284,6 +395,30 @@
 		1F0937151A8507C30040E606 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1F3DD93E1AB92AA3006F25C2 /* icon_location_both.png */,
+				1F3DD93F1AB92AA3006F25C2 /* icon_location_both@2x.png */,
+				1F3DD9321AB92A1D006F25C2 /* icon_location_checked.png */,
+				1F3DD9331AB92A1D006F25C2 /* icon_location_checked@2x.png */,
+				1F3DD9341AB92A1D006F25C2 /* icon_location_left.png */,
+				1F3DD9351AB92A1D006F25C2 /* icon_location_left@2x.png */,
+				1F3DD9361AB92A1D006F25C2 /* icon_location_right.png */,
+				1F3DD9371AB92A1D006F25C2 /* icon_location_right@2x.png */,
+				1F3DD9231AB92207006F25C2 /* user1.png */,
+				1F3DD9241AB92207006F25C2 /* user1@2x.png */,
+				1F3DD9251AB92207006F25C2 /* user2.png */,
+				1F3DD9261AB92207006F25C2 /* user2@2x.png */,
+				1F2838EB1A9AD674006FACBB /* bestival_photo2.png */,
+				1F2838EC1A9AD674006FACBB /* bestival_photo2@2x.png */,
+				1F1701271A8FF75300D6F9B2 /* icon_cancel_green.png */,
+				1F1701281A8FF75300D6F9B2 /* icon_cancel_green@2x.png */,
+				1F1701291A8FF75300D6F9B2 /* icon_location.png */,
+				1F17012A1A8FF75300D6F9B2 /* icon_location@2x.png */,
+				1F17012B1A8FF75300D6F9B2 /* icon_more.png */,
+				1F17012C1A8FF75300D6F9B2 /* icon_more@2x.png */,
+				1F17012D1A8FF75300D6F9B2 /* lineup_photo1.png */,
+				1F17012E1A8FF75300D6F9B2 /* lineup_photo1@2x.png */,
+				1F1701231A8EF41D00D6F9B2 /* icon_plus.png */,
+				1F1701241A8EF41D00D6F9B2 /* icon_plus@2x.png */,
 				1F1985561A8C978700769241 /* bestival_photo1.png */,
 				1F1985571A8C978700769241 /* bestival_photo1@2x.png */,
 				1FBF1F781A8B3F340015A527 /* bg_btn_white@2x.png */,
@@ -315,21 +450,10 @@
 		1F1690241A8E2FA500D7F134 /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
-				1F16902F1A8E319800D7F134 /* BInfoFirstTableViewCell.h */,
-				1F1690301A8E319800D7F134 /* BInfoFirstTableViewCell.m */,
-				1F1690311A8E319800D7F134 /* BInfoFirstTableViewCell.xib */,
-				1F16902A1A8E313F00D7F134 /* BInfoSecondTableViewCell.h */,
-				1F16902B1A8E313F00D7F134 /* BInfoSecondTableViewCell.m */,
-				1F16902C1A8E313F00D7F134 /* BInfoSecondTableViewCell.xib */,
-				1F1690251A8E311A00D7F134 /* BInfoThirdTableViewCell.h */,
-				1F1690261A8E311A00D7F134 /* BInfoThirdTableViewCell.m */,
-				1F1690271A8E311A00D7F134 /* BInfoThirdTableViewCell.xib */,
-				1F1690341A8E31DC00D7F134 /* BInfoForthTableViewCell.h */,
-				1F1690351A8E31DC00D7F134 /* BInfoForthTableViewCell.m */,
-				1F1690361A8E31DC00D7F134 /* BInfoForthTableViewCell.xib */,
-				1F1690391A8E31F100D7F134 /* BInfoFifthTableViewCell.h */,
-				1F16903A1A8E31F100D7F134 /* BInfoFifthTableViewCell.m */,
-				1F16903B1A8E31F100D7F134 /* BInfoFifthTableViewCell.xib */,
+				1F3DD91B1AB91E26006F25C2 /* BestivalFriends */,
+				1FC68AFA1A9837D100A10A15 /* BestivalSee&Do */,
+				1FC68AF91A9837A200A10A15 /* BestivalLineup */,
+				1FC68AF81A98379000A10A15 /* BestivalInfo */,
 			);
 			name = TableCells;
 			sourceTree = "<group>";
@@ -362,6 +486,9 @@
 				1FBF1F611A8B08160015A527 /* BestivalFriendViewController.h */,
 				1FBF1F621A8B08160015A527 /* BestivalFriendViewController.m */,
 				1FBF1F631A8B08160015A527 /* BestivalFriendViewController.xib */,
+				1FB48F691A9E2BBB00D8421E /* BestivalSeeDetailViewController.h */,
+				1FB48F6A1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m */,
+				1FB48F6B1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib */,
 			);
 			name = Bestival;
 			sourceTree = "<group>";
@@ -438,6 +565,9 @@
 				1F29414E1A88BE5800C0AE80 /* FriendsMainViewController.h */,
 				1F29414F1A88BE5800C0AE80 /* FriendsMainViewController.m */,
 				1F2941501A88BE5800C0AE80 /* FriendsMainViewController.xib */,
+				1F3DD92D1AB925C9006F25C2 /* FriendDetailViewController.h */,
+				1F3DD92E1AB925C9006F25C2 /* FriendDetailViewController.m */,
+				1F3DD92F1AB925C9006F25C2 /* FriendDetailViewController.xib */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -450,6 +580,88 @@
 				1F29415A1A88C0A600C0AE80 /* SettingsMainViewController.xib */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		1F3DD91B1AB91E26006F25C2 /* BestivalFriends */ = {
+			isa = PBXGroup;
+			children = (
+				1F3DD91C1AB91E47006F25C2 /* BFriendListTableViewCell.h */,
+				1F3DD91D1AB91E47006F25C2 /* BFriendListTableViewCell.m */,
+				1F3DD91E1AB91E47006F25C2 /* BFriendListTableViewCell.xib */,
+				1F3DD9421AB97629006F25C2 /* BFriendFestivalsTableViewCell.h */,
+				1F3DD9431AB97629006F25C2 /* BFriendFestivalsTableViewCell.m */,
+				1F3DD9441AB97629006F25C2 /* BFriendFestivalsTableViewCell.xib */,
+			);
+			name = BestivalFriends;
+			sourceTree = "<group>";
+		};
+		1FC68AEE1A98307A00A10A15 /* Common Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1FC68AF21A9830DC00A10A15 /* FestivalObject.h */,
+				1FC68AF31A9830DC00A10A15 /* FestivalObject.m */,
+				1FC68AF51A9835C200A10A15 /* SharedManager.h */,
+				1FC68AF61A9835C200A10A15 /* SharedManager.m */,
+				1F41D5A71ABBBFF300EB1208 /* ArtistsObject.h */,
+				1F41D5A81ABBBFF300EB1208 /* ArtistsObject.m */,
+				1F41D5AA1ABBC07900EB1208 /* StageObject.h */,
+				1F41D5AB1ABBC07900EB1208 /* StageObject.m */,
+			);
+			name = "Common Objects";
+			sourceTree = "<group>";
+		};
+		1FC68AF81A98379000A10A15 /* BestivalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1F16902F1A8E319800D7F134 /* BInfoFirstTableViewCell.h */,
+				1F1690301A8E319800D7F134 /* BInfoFirstTableViewCell.m */,
+				1F1690311A8E319800D7F134 /* BInfoFirstTableViewCell.xib */,
+				1F16902A1A8E313F00D7F134 /* BInfoSecondTableViewCell.h */,
+				1F16902B1A8E313F00D7F134 /* BInfoSecondTableViewCell.m */,
+				1F16902C1A8E313F00D7F134 /* BInfoSecondTableViewCell.xib */,
+				1F1690251A8E311A00D7F134 /* BInfoThirdTableViewCell.h */,
+				1F1690261A8E311A00D7F134 /* BInfoThirdTableViewCell.m */,
+				1F1690271A8E311A00D7F134 /* BInfoThirdTableViewCell.xib */,
+				1F1690341A8E31DC00D7F134 /* BInfoForthTableViewCell.h */,
+				1F1690351A8E31DC00D7F134 /* BInfoForthTableViewCell.m */,
+				1F1690361A8E31DC00D7F134 /* BInfoForthTableViewCell.xib */,
+				1F1690391A8E31F100D7F134 /* BInfoFifthTableViewCell.h */,
+				1F16903A1A8E31F100D7F134 /* BInfoFifthTableViewCell.m */,
+				1F16903B1A8E31F100D7F134 /* BInfoFifthTableViewCell.xib */,
+			);
+			name = BestivalInfo;
+			sourceTree = "<group>";
+		};
+		1FC68AF91A9837A200A10A15 /* BestivalLineup */ = {
+			isa = PBXGroup;
+			children = (
+				1F1701371A8FF99E00D6F9B2 /* BLineupListTableViewCell.h */,
+				1F1701381A8FF99E00D6F9B2 /* BLineupListTableViewCell.m */,
+				1F1701391A8FF99E00D6F9B2 /* BLineupListTableViewCell.xib */,
+				1F17013C1A902CF300D6F9B2 /* BLineupStageTableViewCell.h */,
+				1F17013D1A902CF300D6F9B2 /* BLineupStageTableViewCell.m */,
+				1F17013E1A902CF300D6F9B2 /* BLineupStageTableViewCell.xib */,
+				1FC4578F1A943BE900FF631C /* BLineupMoreTableViewCell.h */,
+				1FC457901A943BE900FF631C /* BLineupMoreTableViewCell.m */,
+				1FC457911A943BE900FF631C /* BLineupMoreTableViewCell.xib */,
+				1F6038B41A949D34000FA4B1 /* BLineupButtonsTableViewCell.h */,
+				1F6038B51A949D34000FA4B1 /* BLineupButtonsTableViewCell.m */,
+				1F6038B61A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib */,
+			);
+			name = BestivalLineup;
+			sourceTree = "<group>";
+		};
+		1FC68AFA1A9837D100A10A15 /* BestivalSee&Do */ = {
+			isa = PBXGroup;
+			children = (
+				1FC68AFB1A98380700A10A15 /* BSeeCategoryTableViewCell.h */,
+				1FC68AFC1A98380700A10A15 /* BSeeCategoryTableViewCell.m */,
+				1FC68AFD1A98380700A10A15 /* BSeeCategoryTableViewCell.xib */,
+				1FC68B001A988A6A00A10A15 /* BSeePhotoCardTableViewCell.h */,
+				1FC68B011A988A6A00A10A15 /* BSeePhotoCardTableViewCell.m */,
+				1FC68B021A988A6A00A10A15 /* BSeePhotoCardTableViewCell.xib */,
+			);
+			name = "BestivalSee&Do";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,28 +746,53 @@
 			files = (
 				1FBF1F5B1A8B07C90015A527 /* BestivalSeeViewController.xib in Resources */,
 				1FBF1F731A8B3ABC0015A527 /* icon_facebook@2x.png in Resources */,
+				1F3DD93B1AB92A1D006F25C2 /* icon_location_left@2x.png in Resources */,
+				1F1701321A8FF75300D6F9B2 /* icon_location@2x.png in Resources */,
+				1F3DD9381AB92A1D006F25C2 /* icon_location_checked.png in Resources */,
+				1F3DD93A1AB92A1D006F25C2 /* icon_location_left.png in Resources */,
 				1FBF1F601A8B07E10015A527 /* BestivalMapViewController.xib in Resources */,
+				1F1701301A8FF75300D6F9B2 /* icon_cancel_green@2x.png in Resources */,
+				1F3DD92A1AB92207006F25C2 /* user1@2x.png in Resources */,
+				1F3DD9291AB92207006F25C2 /* user1.png in Resources */,
 				1F0936E41A8503140040E606 /* Main.storyboard in Resources */,
+				1F3DD9201AB91E47006F25C2 /* BFriendListTableViewCell.xib in Resources */,
 				1F29412C1A88601A00C0AE80 /* FestivalCardTableViewCell.xib in Resources */,
+				1F1701251A8EF41D00D6F9B2 /* icon_plus.png in Resources */,
+				1F1701311A8FF75300D6F9B2 /* icon_location.png in Resources */,
+				1FC68B041A988A6A00A10A15 /* BSeePhotoCardTableViewCell.xib in Resources */,
+				1F1701331A8FF75300D6F9B2 /* icon_more.png in Resources */,
 				1FBF1F6E1A8B3ABC0015A527 /* icon_cancel.png in Resources */,
 				1F0937281A851DD60040E606 /* bg_navigationBar.png in Resources */,
 				1FBF1F721A8B3ABC0015A527 /* icon_facebook.png in Resources */,
 				1F1B50D01A8A52900056A6E5 /* BestivalInfoViewController.xib in Resources */,
+				1F3DD9411AB92AA3006F25C2 /* icon_location_both@2x.png in Resources */,
 				1F0937021A85042D0040E606 /* HomeFestivalViewController.xib in Resources */,
+				1F3DD93C1AB92A1D006F25C2 /* icon_location_right.png in Resources */,
 				1F2941521A88BE5800C0AE80 /* FriendsMainViewController.xib in Resources */,
 				1F1690331A8E319800D7F134 /* BInfoFirstTableViewCell.xib in Resources */,
 				1FBF1F561A8B07AE0015A527 /* BestivalLineupViewController.xib in Resources */,
+				1F17013B1A8FF99E00D6F9B2 /* BLineupListTableViewCell.xib in Resources */,
 				1F16902E1A8E313F00D7F134 /* BInfoSecondTableViewCell.xib in Resources */,
 				1FBF1F741A8B3ABC0015A527 /* icon_twitter.png in Resources */,
+				1F1701341A8FF75300D6F9B2 /* icon_more@2x.png in Resources */,
 				1F1985591A8C978700769241 /* bestival_photo1@2x.png in Resources */,
+				1F1701351A8FF75300D6F9B2 /* lineup_photo1.png in Resources */,
+				1FC457931A943BE900FF631C /* BLineupMoreTableViewCell.xib in Resources */,
+				1F3DD92C1AB92207006F25C2 /* user2@2x.png in Resources */,
 				1F2941451A889A4300C0AE80 /* MainSidebarViewController.xib in Resources */,
 				1FBF1F711A8B3ABC0015A527 /* icon_check@2x.png in Resources */,
 				1F16903D1A8E31F100D7F134 /* BInfoFifthTableViewCell.xib in Resources */,
+				1F3DD93D1AB92A1D006F25C2 /* icon_location_right@2x.png in Resources */,
 				1FBF1F6F1A8B3ABC0015A527 /* icon_cancel@2x.png in Resources */,
+				1FC68AFF1A98380700A10A15 /* BSeeCategoryTableViewCell.xib in Resources */,
 				1FBF1F791A8B3F340015A527 /* bg_btn_white@2x.png in Resources */,
 				1F0937211A8507C30040E606 /* icon_nav_menu@2x.png in Resources */,
+				1F3DD9401AB92AA3006F25C2 /* icon_location_both.png in Resources */,
 				1F09371E1A8507C30040E606 /* festival_photo1.png in Resources */,
+				1F2838ED1A9AD674006FACBB /* bestival_photo2.png in Resources */,
+				1F3DD9461AB97629006F25C2 /* BFriendFestivalsTableViewCell.xib in Resources */,
 				1F09371F1A8507C30040E606 /* festival_photo1@2x.png in Resources */,
+				1F1701261A8EF41D00D6F9B2 /* icon_plus@2x.png in Resources */,
 				1F0937221A8507C30040E606 /* icon_search.png in Resources */,
 				1FBF1F751A8B3ABC0015A527 /* icon_twitter@2x.png in Resources */,
 				1F29410A1A885B0A00C0AE80 /* SearchFestivalViewController.xib in Resources */,
@@ -566,15 +803,24 @@
 				1F2941551A88C06700C0AE80 /* icon_back.png in Resources */,
 				1F2941561A88C06700C0AE80 /* icon_back@2x.png in Resources */,
 				1FBF1F771A8B3F2D0015A527 /* bg_btn_white.png in Resources */,
+				1F17012F1A8FF75300D6F9B2 /* icon_cancel_green.png in Resources */,
 				1F0937201A8507C30040E606 /* icon_nav_menu.png in Resources */,
+				1FB48F6D1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib in Resources */,
 				1F0937291A851DD60040E606 /* bg_tabBar.png in Resources */,
+				1F2838EE1A9AD674006FACBB /* bestival_photo2@2x.png in Resources */,
 				1F1690381A8E31DC00D7F134 /* BInfoForthTableViewCell.xib in Resources */,
 				1FBF1F651A8B08160015A527 /* BestivalFriendViewController.xib in Resources */,
 				1F0937251A8507C30040E606 /* pin_grey@2x.png in Resources */,
 				1F0937231A8507C30040E606 /* icon_search@2x.png in Resources */,
 				1F1985581A8C978700769241 /* bestival_photo1.png in Resources */,
 				1F0937241A8507C30040E606 /* pin_grey.png in Resources */,
+				1F6038B81A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib in Resources */,
+				1F3DD92B1AB92207006F25C2 /* user2.png in Resources */,
+				1F1701401A902CF300D6F9B2 /* BLineupStageTableViewCell.xib in Resources */,
 				1F29415C1A88C0A600C0AE80 /* SettingsMainViewController.xib in Resources */,
+				1F3DD9391AB92A1D006F25C2 /* icon_location_checked@2x.png in Resources */,
+				1F1701361A8FF75300D6F9B2 /* lineup_photo1@2x.png in Resources */,
+				1F3DD9311AB925C9006F25C2 /* FriendDetailViewController.xib in Resources */,
 				1F29414A1A88BCBF00C0AE80 /* ChatsMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,22 +840,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2941441A889A4300C0AE80 /* MainSidebarViewController.m in Sources */,
+				1F3DD9301AB925C9006F25C2 /* FriendDetailViewController.m in Sources */,
 				1F2941511A88BE5800C0AE80 /* FriendsMainViewController.m in Sources */,
+				1FC457921A943BE900FF631C /* BLineupMoreTableViewCell.m in Sources */,
 				1F2941401A88997100C0AE80 /* SWRevealViewController.m in Sources */,
+				1F41D5A91ABBBFF300EB1208 /* ArtistsObject.m in Sources */,
+				1F17013A1A8FF99E00D6F9B2 /* BLineupListTableViewCell.m in Sources */,
 				1F1690281A8E311A00D7F134 /* BInfoThirdTableViewCell.m in Sources */,
 				1F0936DE1A8503140040E606 /* FestivalApp.xcdatamodeld in Sources */,
 				1FBF1F551A8B07AE0015A527 /* BestivalLineupViewController.m in Sources */,
+				1FC68AF71A9835C200A10A15 /* SharedManager.m in Sources */,
 				1F1B50CF1A8A52900056A6E5 /* BestivalInfoViewController.m in Sources */,
 				1F0936DB1A8503130040E606 /* AppDelegate.m in Sources */,
+				1FB48F6C1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m in Sources */,
 				1F0937011A85042D0040E606 /* HomeFestivalViewController.m in Sources */,
+				1F6038B71A949D34000FA4B1 /* BLineupButtonsTableViewCell.m in Sources */,
+				1FC68AF41A9830DC00A10A15 /* FestivalObject.m in Sources */,
+				1FC68AFE1A98380700A10A15 /* BSeeCategoryTableViewCell.m in Sources */,
+				1F3DD9451AB97629006F25C2 /* BFriendFestivalsTableViewCell.m in Sources */,
 				1FBF1F5A1A8B07C90015A527 /* BestivalSeeViewController.m in Sources */,
 				1F29415B1A88C0A600C0AE80 /* SettingsMainViewController.m in Sources */,
 				1FBF1F641A8B08160015A527 /* BestivalFriendViewController.m in Sources */,
+				1FC68B031A988A6A00A10A15 /* BSeePhotoCardTableViewCell.m in Sources */,
 				1F1690371A8E31DC00D7F134 /* BInfoForthTableViewCell.m in Sources */,
+				1F3DD91F1AB91E47006F25C2 /* BFriendListTableViewCell.m in Sources */,
+				1F17013F1A902CF300D6F9B2 /* BLineupStageTableViewCell.m in Sources */,
 				1F16903C1A8E31F100D7F134 /* BInfoFifthTableViewCell.m in Sources */,
 				1F2941491A88BCBF00C0AE80 /* ChatsMainViewController.m in Sources */,
 				1F29412B1A88601A00C0AE80 /* FestivalCardTableViewCell.m in Sources */,
 				1F16902D1A8E313F00D7F134 /* BInfoSecondTableViewCell.m in Sources */,
+				1F41D5AC1ABBC07900EB1208 /* StageObject.m in Sources */,
 				1F1690321A8E319800D7F134 /* BInfoFirstTableViewCell.m in Sources */,
 				1F0936D81A8503130040E606 /* main.m in Sources */,
 				1FBF1F5F1A8B07E10015A527 /* BestivalMapViewController.m in Sources */,

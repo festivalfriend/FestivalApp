@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeFestivalViewController">
@@ -83,13 +83,14 @@
                         <constraint firstAttribute="trailing" secondItem="3Vj-kY-slD" secondAttribute="trailing" id="y5e-ld-bef"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-V1-pdj">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-V1-pdj">
                     <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkH-2U-GXj">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkH-2U-GXj">
                             <rect key="frame" x="64" y="0.0" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="Cv7-Mv-Usa"/>
+                                <constraint firstAttribute="height" constant="40" id="WTF-Gd-kPE"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <state key="normal" title="All">
@@ -99,14 +100,22 @@
                                 <action selector="onGetAllFestivals:" destination="-1" eventType="touchUpInside" id="hq6-0F-Z1E"/>
                             </connections>
                         </button>
-                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zDu-q5-tgs">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDu-q5-tgs">
                             <rect key="frame" x="64" y="40" width="40" height="4"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="Exu-fT-vaI"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cei-cz-ggq">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HY-xa-giV">
+                            <rect key="frame" x="436" y="40" width="100" height="4"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="4CR-nx-dqr"/>
+                                <constraint firstAttribute="width" constant="100" id="XwO-57-ROW"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cei-cz-ggq">
                             <rect key="frame" x="436" y="0.0" width="100" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="7ms-Tl-vmp"/>
@@ -119,18 +128,11 @@
                                 <action selector="onGetMyFestivals:" destination="-1" eventType="touchUpInside" id="jj1-LO-VxD"/>
                             </connections>
                         </button>
-                        <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0HY-xa-giV">
-                            <rect key="frame" x="436" y="40" width="100" height="4"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="4" id="4CR-nx-dqr"/>
-                                <constraint firstAttribute="width" constant="100" id="XwO-57-ROW"/>
-                            </constraints>
-                        </view>
                     </subviews>
                     <color key="backgroundColor" red="0.66666668653488159" green="0.83529418706893921" blue="0.5372549295425415" alpha="1" colorSpace="deviceRGB"/>
                     <constraints>
                         <constraint firstItem="0HY-xa-giV" firstAttribute="top" secondItem="Cei-cz-ggq" secondAttribute="bottom" id="2Ea-Zw-cVT"/>
+                        <constraint firstAttribute="height" constant="44" id="2bH-7J-txJ"/>
                         <constraint firstAttribute="trailing" secondItem="Cei-cz-ggq" secondAttribute="trailing" constant="64" id="4cd-UU-Xt1"/>
                         <constraint firstItem="Cei-cz-ggq" firstAttribute="top" secondItem="nzG-V1-pdj" secondAttribute="top" id="9Jr-lD-uHn"/>
                         <constraint firstItem="zDu-q5-tgs" firstAttribute="top" secondItem="JkH-2U-GXj" secondAttribute="bottom" id="LkL-z8-aNA"/>
@@ -142,7 +144,10 @@
                         <constraint firstAttribute="bottom" secondItem="zDu-q5-tgs" secondAttribute="bottom" id="wyg-eq-wp1"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="233" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fqz-IK-QUQ">
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-CM-2b7">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                </activityIndicatorView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="233" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fqz-IK-QUQ">
                     <rect key="frame" x="0.0" y="108" width="600" height="492"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
@@ -150,9 +155,6 @@
                         <outlet property="delegate" destination="i5M-Pr-FkT" id="vcc-it-E93"/>
                     </connections>
                 </tableView>
-                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-CM-2b7">
-                    <rect key="frame" x="291" y="344" width="20" height="20"/>
-                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

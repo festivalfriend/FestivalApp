@@ -70,8 +70,8 @@
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ine-LI-YaY" userLabel="Menu ScrollView">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <subviews>
-                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0nf-kl-tDm" userLabel="Menu View">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nf-kl-tDm" userLabel="Menu View">
+                                    <rect key="frame" x="0.0" y="0.0" width="420" height="44"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ku-jg-sKt">
                                             <rect key="frame" x="20" y="0.0" width="50" height="40"/>
@@ -238,12 +238,18 @@
                         <constraint firstAttribute="height" constant="44" id="dxv-Jq-S8B"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QF1-MP-kAh">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QF1-MP-kAh">
                     <rect key="frame" x="0.0" y="108" width="600" height="726"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="separatorColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VyW-6s-3m1"/>
+                        <outlet property="delegate" destination="-1" id="qaX-hZ-Ut1"/>
+                    </connections>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="QF1-MP-kAh" secondAttribute="bottom" constant="2" id="4je-17-x8q"/>
                 <constraint firstItem="UAz-cq-8U6" firstAttribute="top" secondItem="FvW-1b-QaL" secondAttribute="top" id="I6s-xO-Uy6"/>
