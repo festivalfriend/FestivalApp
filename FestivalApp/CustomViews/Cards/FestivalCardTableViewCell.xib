@@ -1,89 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FestivalCardTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="233"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="festival_photo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="dm6-bx-Ooh">
-                        <rect key="frame" x="10" y="11" width="300" height="168"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="150" id="ctf-h8-hgb"/>
-                        </constraints>
-                    </imageView>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g35-2b-ctZ">
-                        <rect key="frame" x="10" y="178" width="300" height="55"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TG-R7-QrD">
+                        <rect key="frame" x="10" y="10" width="300" height="222"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12th - 15th June" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Re-Fh-CVa">
-                                <rect key="frame" x="8" y="30" width="232" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pin_grey.png" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-TQ-RFc">
-                                <rect key="frame" x="270" y="18" width="20" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="Hxf-lT-bRO"/>
-                                    <constraint firstAttribute="height" constant="20" id="IsM-tI-POu"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="festival_photo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="dm6-bx-Ooh">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="168"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZU-9F-ba2">
-                                <rect key="frame" x="217" y="18" width="50" height="20"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g35-2b-ctZ">
+                                <rect key="frame" x="0.0" y="168" width="300" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12th - 15th June" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Re-Fh-CVa">
+                                        <rect key="frame" x="8" y="30" width="232" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="TtQ-ss-Zy5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin_grey.png" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-TQ-RFc">
+                                        <rect key="frame" x="270" y="17" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Tm2-Ht-N9k"/>
+                                            <constraint firstAttribute="height" constant="20" id="bsx-Ak-VSf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZU-9F-ba2">
+                                        <rect key="frame" x="217" y="17" width="50" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="WWf-3D-0Mz"/>
+                                            <constraint firstAttribute="width" constant="50" id="xRS-gF-GcR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Isle of Wight Festival" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn7-4H-AIb">
+                                        <rect key="frame" x="8" y="8" width="232" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="cWX-VD-0up"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="7XR-iC-tH3"/>
-                                    <constraint firstAttribute="width" constant="50" id="9tS-Rb-ACO"/>
+                                    <constraint firstItem="Jn7-4H-AIb" firstAttribute="top" secondItem="g35-2b-ctZ" secondAttribute="top" constant="8" id="1Ht-aK-zRh"/>
+                                    <constraint firstAttribute="trailing" secondItem="tbc-TQ-RFc" secondAttribute="trailing" constant="10" id="4DJ-hl-0Gi"/>
+                                    <constraint firstItem="tbc-TQ-RFc" firstAttribute="leading" secondItem="8Re-Fh-CVa" secondAttribute="trailing" constant="30" id="GYB-DI-stn"/>
+                                    <constraint firstAttribute="centerY" secondItem="IZU-9F-ba2" secondAttribute="centerY" id="Q6K-DB-eQX"/>
+                                    <constraint firstAttribute="height" constant="54" id="Xdk-AT-lLJ"/>
+                                    <constraint firstItem="8Re-Fh-CVa" firstAttribute="leading" secondItem="g35-2b-ctZ" secondAttribute="leading" constant="8" id="YWq-Rk-AeH"/>
+                                    <constraint firstItem="tbc-TQ-RFc" firstAttribute="leading" secondItem="IZU-9F-ba2" secondAttribute="trailing" constant="3" id="bZk-H0-NBK"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Re-Fh-CVa" secondAttribute="bottom" constant="4" id="pbT-cn-R9D"/>
+                                    <constraint firstItem="Jn7-4H-AIb" firstAttribute="leading" secondItem="g35-2b-ctZ" secondAttribute="leading" constant="8" id="wGg-Dv-Pdm"/>
+                                    <constraint firstItem="tbc-TQ-RFc" firstAttribute="leading" secondItem="Jn7-4H-AIb" secondAttribute="trailing" constant="30" id="wxT-A4-Wlf"/>
+                                    <constraint firstAttribute="centerY" secondItem="tbc-TQ-RFc" secondAttribute="centerY" id="xWe-vf-fi0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Isle of Wight Festival" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn7-4H-AIb">
-                                <rect key="frame" x="8" y="8" width="232" height="20"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="55" id="72J-eY-gww"/>
-                            <constraint firstAttribute="centerY" secondItem="tbc-TQ-RFc" secondAttribute="centerY" id="B6j-E0-Le5"/>
-                            <constraint firstAttribute="centerY" secondItem="IZU-9F-ba2" secondAttribute="centerY" id="Flm-tZ-Gct"/>
-                            <constraint firstAttribute="trailing" secondItem="tbc-TQ-RFc" secondAttribute="trailing" constant="10" id="Ojp-FD-PZu"/>
-                            <constraint firstItem="tbc-TQ-RFc" firstAttribute="leading" secondItem="IZU-9F-ba2" secondAttribute="trailing" constant="3" id="lWw-03-BWd"/>
+                            <constraint firstItem="g35-2b-ctZ" firstAttribute="leading" secondItem="9TG-R7-QrD" secondAttribute="leading" id="CxO-9U-XVa"/>
+                            <constraint firstItem="dm6-bx-Ooh" firstAttribute="leading" secondItem="9TG-R7-QrD" secondAttribute="leading" id="FI4-8L-EtJ"/>
+                            <constraint firstAttribute="trailing" secondItem="g35-2b-ctZ" secondAttribute="trailing" id="Hlz-xC-Mw9"/>
+                            <constraint firstAttribute="bottom" secondItem="g35-2b-ctZ" secondAttribute="bottom" id="QqI-V1-Hw6"/>
+                            <constraint firstAttribute="trailing" secondItem="dm6-bx-Ooh" secondAttribute="trailing" id="S0W-fI-XbE"/>
+                            <constraint firstItem="dm6-bx-Ooh" firstAttribute="top" secondItem="9TG-R7-QrD" secondAttribute="top" id="aTy-Hv-WcX"/>
+                            <constraint firstItem="g35-2b-ctZ" firstAttribute="top" secondItem="dm6-bx-Ooh" secondAttribute="bottom" id="sjO-k6-FkD"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="72J-eY-gww"/>
-                            </mask>
-                        </variation>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="dm6-bx-Ooh" secondAttribute="trailing" constant="2" id="56a-fC-WIQ"/>
-                    <constraint firstItem="g35-2b-ctZ" firstAttribute="top" secondItem="dm6-bx-Ooh" secondAttribute="bottom" id="FTk-Cb-2qP"/>
-                    <constraint firstItem="g35-2b-ctZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="V6V-Iq-bvE"/>
-                    <constraint firstItem="dm6-bx-Ooh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="ds2-iW-IVf"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="g35-2b-ctZ" secondAttribute="bottom" constant="-8" id="jee-qj-zbQ"/>
-                    <constraint firstItem="dm6-bx-Ooh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="kJv-28-3Ak"/>
-                    <constraint firstItem="g35-2b-ctZ" firstAttribute="trailing" secondItem="dm6-bx-Ooh" secondAttribute="trailing" id="yB0-FO-csx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9TG-R7-QrD" secondAttribute="trailing" constant="2" id="jAQ-V1-4ea"/>
+                    <constraint firstItem="9TG-R7-QrD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="pCJ-Uz-4SD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9TG-R7-QrD" secondAttribute="bottom" constant="-6" id="vzY-97-3yK"/>
+                    <constraint firstItem="9TG-R7-QrD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="zDc-ov-oVh"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
             <connections>
                 <outlet property="DurationLabel" destination="8Re-Fh-CVa" id="Vgm-jI-LLu"/>
                 <outlet property="ImageView" destination="dm6-bx-Ooh" id="7D2-sb-4QX"/>
                 <outlet property="InformationView" destination="g35-2b-ctZ" id="c6B-W8-KiA"/>
                 <outlet property="TitleLabel" destination="Jn7-4H-AIb" id="xFN-WG-gb5"/>
                 <outlet property="UserLabel" destination="IZU-9F-ba2" id="eyv-LI-bFE"/>
+                <outlet property="m_contentView" destination="9TG-R7-QrD" id="EKr-4z-Nc6"/>
             </connections>
             <point key="canvasLocation" x="137" y="159.5"/>
         </tableViewCell>

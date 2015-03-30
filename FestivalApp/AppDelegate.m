@@ -37,8 +37,6 @@
     
 //    revealController.delegate = self;
     
-    
-    
 //    revealController.bounceBackOnOverdraw=NO;
 //    revealController.stableDragOnOverdraw=YES;
     
@@ -46,8 +44,8 @@
     
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
-
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -120,8 +118,8 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
-    
     return _persistentStoreCoordinator;
+    
 }
 
 

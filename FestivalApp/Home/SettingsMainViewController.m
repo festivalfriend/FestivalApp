@@ -7,6 +7,7 @@
 //
 
 #import "SettingsMainViewController.h"
+#import "SWRevealViewController.h"
 
 @interface SettingsMainViewController ()
 
@@ -35,6 +36,8 @@
 */
 
 - (IBAction)onClickMenu:(id)sender {
+    SWRevealViewController *revealVC = [self revealViewController];
+    [revealVC rightRevealToggle:sender];
     
 }
 - (IBAction)onClickBack:(id)sender {

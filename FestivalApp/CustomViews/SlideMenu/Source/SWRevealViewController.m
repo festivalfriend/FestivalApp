@@ -279,6 +279,7 @@ static CGFloat scaledValue( CGFloat v1, CGFloat min2, CGFloat max2, CGFloat min1
     NSInteger rearIndex = [subViews indexOfObjectIdenticalTo:_rearView];
     NSInteger rightIndex = [subViews indexOfObjectIdenticalTo:_rightView];
     
+
     if ( (symetry < 0 && rightIndex < rearIndex) || (symetry > 0 && rearIndex < rightIndex) )
         [self exchangeSubviewAtIndex:rightIndex withSubviewAtIndex:rearIndex];
 }
@@ -313,7 +314,7 @@ static CGFloat scaledValue( CGFloat v1, CGFloat min2, CGFloat max2, CGFloat min1
 
     else if (x <= revealWidth+2*revealOverdraw)
         result = revealWidth + (x-revealWidth)/2;   // slow down translation by halph the movement.
-
+    
     else
         result = revealWidth+revealOverdraw;        // keep at the rightMost location.
     
@@ -627,6 +628,7 @@ const int FrontViewPositionNone = 0xff;
     _draggableBorderWidth = 0.0f;
     _clipsViewsToBounds = NO;
     _extendsPointInsideHit = NO;
+    
 }
 
 
@@ -733,6 +735,8 @@ const int FrontViewPositionNone = 0xff;
 - (void)setFrontViewController:(UIViewController *)frontViewController
 {
     [self setFrontViewController:frontViewController animated:NO];
+    
+    
 }
 
 
@@ -771,10 +775,12 @@ const int FrontViewPositionNone = 0xff;
     if ( ![self isViewLoaded])
     {
         [self _performTransitionOperation:SWRevealControllerOperationReplaceRearController withViewController:rearViewController animated:NO];
+        
         return;
     }
 
     [self _dispatchTransitionOperation:SWRevealControllerOperationReplaceRearController withViewController:rearViewController animated:animated];
+    
 }
 
 
@@ -830,7 +836,6 @@ const int FrontViewPositionNone = 0xff;
         _frontViewPosition = frontViewPosition;
         _rearViewPosition = frontViewPosition;
         _rightViewPosition = frontViewPosition;
-        return;
     }
     
     [self _dispatchSetFrontViewPosition:frontViewPosition animated:animated];
@@ -1777,6 +1782,9 @@ const int FrontViewPositionNone = 0xff;
 NSString * const SWSegueRearIdentifier = @"sw_rear";
 NSString * const SWSegueFrontIdentifier = @"sw_front";
 NSString * const SWSegueRightIdentifier = @"sw_right";
+
+NSString * const SWSegueBottomIdentifier = @"sw_bottom";
+NSString * const SWSegueLeftIdentitifier = @"sw_left";
 
 
 #pragma mark - SWRevealViewControllerSegueSetController class

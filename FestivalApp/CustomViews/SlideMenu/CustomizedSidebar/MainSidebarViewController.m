@@ -61,6 +61,7 @@
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:newFrontController];
     navigationController.navigationBarHidden = YES;
     [revealController pushFrontViewController:navigationController animated:YES];
+    
 
     self.curMenuIndex = mIndex;
 }
