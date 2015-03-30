@@ -12,7 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *m_lblTitle;
 @property (weak, nonatomic) IBOutlet UIView *m_viewMore;
+@property (weak, nonatomic) IBOutlet UIButton *btnMore;
 
 
-- (IBAction)onClickMore:(id)sender;
 @end

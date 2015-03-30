@@ -27,6 +27,10 @@
 #import "BestivalMapViewController.h"
 #import "BestivalFriendViewController.h"
 
+#import "ArtistsAllViewController.h"
+#import "StageAllViewController.h"
+#import "StageMainViewController.h"
+
 @interface BestivalLineupViewController ()
 
 @end
@@ -57,6 +61,9 @@
             cell = [nib objectAtIndex:0];
         }
         
+        [cell.m_btnAllArtists addTarget:self action:@selector(onAllArtists:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.m_btnStages addTarget:self action:@selector(onAllStages:) forControlEvents:UIControlEventTouchUpInside];
+        
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
@@ -69,6 +76,8 @@
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
             cell = [nib objectAtIndex:0];
         }
+        [cell.m_lblTitle setText:@"My Lineup"];
+        [cell.btnMore addTarget:self action:@selector(onViewMoreLineup:) forControlEvents:UIControlEventTouchUpInside];
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
@@ -111,6 +120,12 @@
                 NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
                 cell = [nib objectAtIndex:0];
             }
+            NSInteger ind;
+            ind = (indexPath.row-5)/2;
+            cell.btnMore.tag = ind;
+            
+            [cell.btnMore addTarget:self action:@selector(onViewMoreStages:) forControlEvents:UIControlEventTouchUpInside];
+            
             
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
@@ -230,5 +245,30 @@
     
 }
 
+
+-(void)onAllArtists : (id)sender
+{
+    ArtistsAllViewController *artistsAllVC = [[ArtistsAllViewController alloc] init];
+    [self.navigationController pushViewController:artistsAllVC animated:YES];
+}
+
+-(void)onAllStages : (id)sender
+{
+    StageAllViewController *stageAllVC = [[StageAllViewController alloc] init];
+    [self.navigationController pushViewController:stageAllVC animated:YES];
+}
+
+#pragma mark - MoreButton Actions
+-(void)onViewMoreLineup : (id)sender
+{
+    NSLog(@"LineUp More Button Clicked");
+}
+-(void)onViewMoreStages : (UIButton *)sender
+{
+    NSLog(@"Tag:%ld",(long)sender.tag);
+    StageMainViewController *stageMainVC = [[StageMainViewController alloc] init];
+    
+    [self.navigationController pushViewController:stageMainVC animated:YES];
+}
 
 @end

@@ -13,8 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *m_btnAllArtists;
 @property (weak, nonatomic) IBOutlet UIButton *m_btnStages;
 
-- (IBAction)onClickAllArtists:(id)sender;
-- (IBAction)onClickStages:(id)sender;
 
 
 @end

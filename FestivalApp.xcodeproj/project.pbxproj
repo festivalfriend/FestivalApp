@@ -71,6 +71,10 @@
 		1F2941561A88C06700C0AE80 /* icon_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2941541A88C06700C0AE80 /* icon_back@2x.png */; };
 		1F29415B1A88C0A600C0AE80 /* SettingsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2941591A88C0A600C0AE80 /* SettingsMainViewController.m */; };
 		1F29415C1A88C0A600C0AE80 /* SettingsMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F29415A1A88C0A600C0AE80 /* SettingsMainViewController.xib */; };
+		1F3C5EAB1AC46A1400A86345 /* StageMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C5EA91AC46A1400A86345 /* StageMainViewController.m */; };
+		1F3C5EAC1AC46A1400A86345 /* StageMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3C5EAA1AC46A1400A86345 /* StageMainViewController.xib */; };
+		1F3CE9B71AC5B49B00AF5C50 /* ArtistsAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3CE9B51AC5B49B00AF5C50 /* ArtistsAllViewController.m */; };
+		1F3CE9B81AC5B49B00AF5C50 /* ArtistsAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3CE9B61AC5B49B00AF5C50 /* ArtistsAllViewController.xib */; };
 		1F3DD91F1AB91E47006F25C2 /* BFriendListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DD91D1AB91E47006F25C2 /* BFriendListTableViewCell.m */; };
 		1F3DD9201AB91E47006F25C2 /* BFriendListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD91E1AB91E47006F25C2 /* BFriendListTableViewCell.xib */; };
 		1F3DD9291AB92207006F25C2 /* user1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9231AB92207006F25C2 /* user1.png */; };
@@ -93,6 +97,16 @@
 		1F41D5AC1ABBC07900EB1208 /* StageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41D5AB1ABBC07900EB1208 /* StageObject.m */; };
 		1F6038B71A949D34000FA4B1 /* BLineupButtonsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6038B51A949D34000FA4B1 /* BLineupButtonsTableViewCell.m */; };
 		1F6038B81A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6038B61A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib */; };
+		1F6909C61AC8EFF400F560C1 /* icon_add_gery.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6909C41AC8EFF400F560C1 /* icon_add_gery.png */; };
+		1F6909C71AC8EFF400F560C1 /* icon_add_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6909C51AC8EFF400F560C1 /* icon_add_grey@2x.png */; };
+		1F6909CB1AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6909C91AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.m */; };
+		1F6909CC1AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6909CA1AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.xib */; };
+		1F74948A1AC5C86F00A03A3E /* ArtistListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7494881AC5C86F00A03A3E /* ArtistListTableViewCell.m */; };
+		1F74948B1AC5C86F00A03A3E /* ArtistListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7494891AC5C86F00A03A3E /* ArtistListTableViewCell.xib */; };
+		1F74948F1AC5DF5500A03A3E /* StageAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F74948D1AC5DF5500A03A3E /* StageAllViewController.m */; };
+		1F7494901AC5DF5500A03A3E /* StageAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F74948E1AC5DF5500A03A3E /* StageAllViewController.xib */; };
+		1F7494951AC5E3BA00A03A3E /* StageCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7494931AC5E3BA00A03A3E /* StageCardTableViewCell.m */; };
+		1F7494961AC5E3BA00A03A3E /* StageCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7494941AC5E3BA00A03A3E /* StageCardTableViewCell.xib */; };
 		1FB48F6C1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB48F6A1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m */; };
 		1FB48F6D1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB48F6B1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib */; };
 		1FBF1F551A8B07AE0015A527 /* BestivalLineupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF1F531A8B07AE0015A527 /* BestivalLineupViewController.m */; };
@@ -220,6 +234,12 @@
 		1F2941581A88C0A600C0AE80 /* SettingsMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsMainViewController.h; path = Home/SettingsMainViewController.h; sourceTree = "<group>"; };
 		1F2941591A88C0A600C0AE80 /* SettingsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsMainViewController.m; path = Home/SettingsMainViewController.m; sourceTree = "<group>"; };
 		1F29415A1A88C0A600C0AE80 /* SettingsMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsMainViewController.xib; path = Home/SettingsMainViewController.xib; sourceTree = "<group>"; };
+		1F3C5EA81AC46A1400A86345 /* StageMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StageMainViewController.h; path = Stage/StageMainViewController.h; sourceTree = "<group>"; };
+		1F3C5EA91AC46A1400A86345 /* StageMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StageMainViewController.m; path = Stage/StageMainViewController.m; sourceTree = "<group>"; };
+		1F3C5EAA1AC46A1400A86345 /* StageMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StageMainViewController.xib; path = Stage/StageMainViewController.xib; sourceTree = "<group>"; };
+		1F3CE9B41AC5B49B00AF5C50 /* ArtistsAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistsAllViewController.h; path = Artists/ArtistsAllViewController.h; sourceTree = "<group>"; };
+		1F3CE9B51AC5B49B00AF5C50 /* ArtistsAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistsAllViewController.m; path = Artists/ArtistsAllViewController.m; sourceTree = "<group>"; };
+		1F3CE9B61AC5B49B00AF5C50 /* ArtistsAllViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtistsAllViewController.xib; path = Artists/ArtistsAllViewController.xib; sourceTree = "<group>"; };
 		1F3DD91C1AB91E47006F25C2 /* BFriendListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BFriendListTableViewCell.h; path = TableCells/BFriendListTableViewCell.h; sourceTree = "<group>"; };
 		1F3DD91D1AB91E47006F25C2 /* BFriendListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BFriendListTableViewCell.m; path = TableCells/BFriendListTableViewCell.m; sourceTree = "<group>"; };
 		1F3DD91E1AB91E47006F25C2 /* BFriendListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BFriendListTableViewCell.xib; path = TableCells/BFriendListTableViewCell.xib; sourceTree = "<group>"; };
@@ -248,6 +268,20 @@
 		1F6038B41A949D34000FA4B1 /* BLineupButtonsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLineupButtonsTableViewCell.h; path = TableCells/BLineupButtonsTableViewCell.h; sourceTree = "<group>"; };
 		1F6038B51A949D34000FA4B1 /* BLineupButtonsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLineupButtonsTableViewCell.m; path = TableCells/BLineupButtonsTableViewCell.m; sourceTree = "<group>"; };
 		1F6038B61A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BLineupButtonsTableViewCell.xib; path = TableCells/BLineupButtonsTableViewCell.xib; sourceTree = "<group>"; };
+		1F6909C41AC8EFF400F560C1 /* icon_add_gery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_add_gery.png; sourceTree = "<group>"; };
+		1F6909C51AC8EFF400F560C1 /* icon_add_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_add_grey@2x.png"; sourceTree = "<group>"; };
+		1F6909C81AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistsListDetailTableViewCell.h; path = TableCells/ArtistsListDetailTableViewCell.h; sourceTree = "<group>"; };
+		1F6909C91AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistsListDetailTableViewCell.m; path = TableCells/ArtistsListDetailTableViewCell.m; sourceTree = "<group>"; };
+		1F6909CA1AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtistsListDetailTableViewCell.xib; path = TableCells/ArtistsListDetailTableViewCell.xib; sourceTree = "<group>"; };
+		1F7494871AC5C86F00A03A3E /* ArtistListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistListTableViewCell.h; path = TableCells/ArtistListTableViewCell.h; sourceTree = "<group>"; };
+		1F7494881AC5C86F00A03A3E /* ArtistListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistListTableViewCell.m; path = TableCells/ArtistListTableViewCell.m; sourceTree = "<group>"; };
+		1F7494891AC5C86F00A03A3E /* ArtistListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtistListTableViewCell.xib; path = TableCells/ArtistListTableViewCell.xib; sourceTree = "<group>"; };
+		1F74948C1AC5DF5500A03A3E /* StageAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StageAllViewController.h; path = Stage/StageAllViewController.h; sourceTree = "<group>"; };
+		1F74948D1AC5DF5500A03A3E /* StageAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StageAllViewController.m; path = Stage/StageAllViewController.m; sourceTree = "<group>"; };
+		1F74948E1AC5DF5500A03A3E /* StageAllViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StageAllViewController.xib; path = Stage/StageAllViewController.xib; sourceTree = "<group>"; };
+		1F7494921AC5E3BA00A03A3E /* StageCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StageCardTableViewCell.h; path = Cards/StageCardTableViewCell.h; sourceTree = "<group>"; };
+		1F7494931AC5E3BA00A03A3E /* StageCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StageCardTableViewCell.m; path = Cards/StageCardTableViewCell.m; sourceTree = "<group>"; };
+		1F7494941AC5E3BA00A03A3E /* StageCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StageCardTableViewCell.xib; path = Cards/StageCardTableViewCell.xib; sourceTree = "<group>"; };
 		1FB48F691A9E2BBB00D8421E /* BestivalSeeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BestivalSeeDetailViewController.h; path = Bestival/BestivalSeeDetailViewController.h; sourceTree = "<group>"; };
 		1FB48F6A1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BestivalSeeDetailViewController.m; path = Bestival/BestivalSeeDetailViewController.m; sourceTree = "<group>"; };
 		1FB48F6B1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BestivalSeeDetailViewController.xib; path = Bestival/BestivalSeeDetailViewController.xib; sourceTree = "<group>"; };
@@ -380,6 +414,8 @@
 		1F0937141A8507660040E606 /* AppScreens */ = {
 			isa = PBXGroup;
 			children = (
+				1F3CE9B31AC5B47600AF5C50 /* Artists */,
+				1F3C5EA71AC469E600A86345 /* Stage */,
 				1F1B50D11A8A52980056A6E5 /* Bestival */,
 				1F2941571A88C09200C0AE80 /* Settings */,
 				1F29414D1A88BE3100C0AE80 /* Friends */,
@@ -395,6 +431,8 @@
 		1F0937151A8507C30040E606 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1F6909C41AC8EFF400F560C1 /* icon_add_gery.png */,
+				1F6909C51AC8EFF400F560C1 /* icon_add_grey@2x.png */,
 				1F3DD93E1AB92AA3006F25C2 /* icon_location_both.png */,
 				1F3DD93F1AB92AA3006F25C2 /* icon_location_both@2x.png */,
 				1F3DD9321AB92A1D006F25C2 /* icon_location_checked.png */,
@@ -450,6 +488,8 @@
 		1F1690241A8E2FA500D7F134 /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				1F7494911AC5E2FE00A03A3E /* Stage */,
+				1F7494861AC5C84700A03A3E /* Artists */,
 				1F3DD91B1AB91E26006F25C2 /* BestivalFriends */,
 				1FC68AFA1A9837D100A10A15 /* BestivalSee&Do */,
 				1FC68AF91A9837A200A10A15 /* BestivalLineup */,
@@ -582,6 +622,29 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		1F3C5EA71AC469E600A86345 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				1F3C5EA81AC46A1400A86345 /* StageMainViewController.h */,
+				1F3C5EA91AC46A1400A86345 /* StageMainViewController.m */,
+				1F3C5EAA1AC46A1400A86345 /* StageMainViewController.xib */,
+				1F74948C1AC5DF5500A03A3E /* StageAllViewController.h */,
+				1F74948D1AC5DF5500A03A3E /* StageAllViewController.m */,
+				1F74948E1AC5DF5500A03A3E /* StageAllViewController.xib */,
+			);
+			name = Stage;
+			sourceTree = "<group>";
+		};
+		1F3CE9B31AC5B47600AF5C50 /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				1F3CE9B41AC5B49B00AF5C50 /* ArtistsAllViewController.h */,
+				1F3CE9B51AC5B49B00AF5C50 /* ArtistsAllViewController.m */,
+				1F3CE9B61AC5B49B00AF5C50 /* ArtistsAllViewController.xib */,
+			);
+			name = Artists;
+			sourceTree = "<group>";
+		};
 		1F3DD91B1AB91E26006F25C2 /* BestivalFriends */ = {
 			isa = PBXGroup;
 			children = (
@@ -593,6 +656,29 @@
 				1F3DD9441AB97629006F25C2 /* BFriendFestivalsTableViewCell.xib */,
 			);
 			name = BestivalFriends;
+			sourceTree = "<group>";
+		};
+		1F7494861AC5C84700A03A3E /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				1F7494871AC5C86F00A03A3E /* ArtistListTableViewCell.h */,
+				1F7494881AC5C86F00A03A3E /* ArtistListTableViewCell.m */,
+				1F7494891AC5C86F00A03A3E /* ArtistListTableViewCell.xib */,
+				1F6909C81AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.h */,
+				1F6909C91AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.m */,
+				1F6909CA1AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.xib */,
+			);
+			name = Artists;
+			sourceTree = "<group>";
+		};
+		1F7494911AC5E2FE00A03A3E /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				1F7494921AC5E3BA00A03A3E /* StageCardTableViewCell.h */,
+				1F7494931AC5E3BA00A03A3E /* StageCardTableViewCell.m */,
+				1F7494941AC5E3BA00A03A3E /* StageCardTableViewCell.xib */,
+			);
+			name = Stage;
 			sourceTree = "<group>";
 		};
 		1FC68AEE1A98307A00A10A15 /* Common Objects */ = {
@@ -713,6 +799,7 @@
 				TargetAttributes = {
 					1F0936D11A8503130040E606 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = Y42F42MA92;
 					};
 					1F0936ED1A8503140040E606 = {
 						CreatedOnToolsVersion = 6.1;
@@ -745,6 +832,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FBF1F5B1A8B07C90015A527 /* BestivalSeeViewController.xib in Resources */,
+				1F74948B1AC5C86F00A03A3E /* ArtistListTableViewCell.xib in Resources */,
 				1FBF1F731A8B3ABC0015A527 /* icon_facebook@2x.png in Resources */,
 				1F3DD93B1AB92A1D006F25C2 /* icon_location_left@2x.png in Resources */,
 				1F1701321A8FF75300D6F9B2 /* icon_location@2x.png in Resources */,
@@ -759,6 +847,7 @@
 				1F29412C1A88601A00C0AE80 /* FestivalCardTableViewCell.xib in Resources */,
 				1F1701251A8EF41D00D6F9B2 /* icon_plus.png in Resources */,
 				1F1701311A8FF75300D6F9B2 /* icon_location.png in Resources */,
+				1F3CE9B81AC5B49B00AF5C50 /* ArtistsAllViewController.xib in Resources */,
 				1FC68B041A988A6A00A10A15 /* BSeePhotoCardTableViewCell.xib in Resources */,
 				1F1701331A8FF75300D6F9B2 /* icon_more.png in Resources */,
 				1FBF1F6E1A8B3ABC0015A527 /* icon_cancel.png in Resources */,
@@ -787,6 +876,7 @@
 				1FC68AFF1A98380700A10A15 /* BSeeCategoryTableViewCell.xib in Resources */,
 				1FBF1F791A8B3F340015A527 /* bg_btn_white@2x.png in Resources */,
 				1F0937211A8507C30040E606 /* icon_nav_menu@2x.png in Resources */,
+				1F7494901AC5DF5500A03A3E /* StageAllViewController.xib in Resources */,
 				1F3DD9401AB92AA3006F25C2 /* icon_location_both.png in Resources */,
 				1F09371E1A8507C30040E606 /* festival_photo1.png in Resources */,
 				1F2838ED1A9AD674006FACBB /* bestival_photo2.png in Resources */,
@@ -794,22 +884,27 @@
 				1F09371F1A8507C30040E606 /* festival_photo1@2x.png in Resources */,
 				1F1701261A8EF41D00D6F9B2 /* icon_plus@2x.png in Resources */,
 				1F0937221A8507C30040E606 /* icon_search.png in Resources */,
+				1F6909CC1AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.xib in Resources */,
 				1FBF1F751A8B3ABC0015A527 /* icon_twitter@2x.png in Resources */,
 				1F29410A1A885B0A00C0AE80 /* SearchFestivalViewController.xib in Resources */,
 				1F1690291A8E311A00D7F134 /* BInfoThirdTableViewCell.xib in Resources */,
+				1F3C5EAC1AC46A1400A86345 /* StageMainViewController.xib in Resources */,
 				1FBF1F701A8B3ABC0015A527 /* icon_check.png in Resources */,
 				1F0936E91A8503140040E606 /* LaunchScreen.xib in Resources */,
 				1F0936E61A8503140040E606 /* Images.xcassets in Resources */,
 				1F2941551A88C06700C0AE80 /* icon_back.png in Resources */,
 				1F2941561A88C06700C0AE80 /* icon_back@2x.png in Resources */,
 				1FBF1F771A8B3F2D0015A527 /* bg_btn_white.png in Resources */,
+				1F6909C71AC8EFF400F560C1 /* icon_add_grey@2x.png in Resources */,
 				1F17012F1A8FF75300D6F9B2 /* icon_cancel_green.png in Resources */,
 				1F0937201A8507C30040E606 /* icon_nav_menu.png in Resources */,
 				1FB48F6D1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib in Resources */,
 				1F0937291A851DD60040E606 /* bg_tabBar.png in Resources */,
+				1F7494961AC5E3BA00A03A3E /* StageCardTableViewCell.xib in Resources */,
 				1F2838EE1A9AD674006FACBB /* bestival_photo2@2x.png in Resources */,
 				1F1690381A8E31DC00D7F134 /* BInfoForthTableViewCell.xib in Resources */,
 				1FBF1F651A8B08160015A527 /* BestivalFriendViewController.xib in Resources */,
+				1F6909C61AC8EFF400F560C1 /* icon_add_gery.png in Resources */,
 				1F0937251A8507C30040E606 /* pin_grey@2x.png in Resources */,
 				1F0937231A8507C30040E606 /* icon_search@2x.png in Resources */,
 				1F1985581A8C978700769241 /* bestival_photo1.png in Resources */,
@@ -840,6 +935,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2941441A889A4300C0AE80 /* MainSidebarViewController.m in Sources */,
+				1F3CE9B71AC5B49B00AF5C50 /* ArtistsAllViewController.m in Sources */,
 				1F3DD9301AB925C9006F25C2 /* FriendDetailViewController.m in Sources */,
 				1F2941511A88BE5800C0AE80 /* FriendsMainViewController.m in Sources */,
 				1FC457921A943BE900FF631C /* BLineupMoreTableViewCell.m in Sources */,
@@ -864,15 +960,20 @@
 				1FC68B031A988A6A00A10A15 /* BSeePhotoCardTableViewCell.m in Sources */,
 				1F1690371A8E31DC00D7F134 /* BInfoForthTableViewCell.m in Sources */,
 				1F3DD91F1AB91E47006F25C2 /* BFriendListTableViewCell.m in Sources */,
+				1F74948A1AC5C86F00A03A3E /* ArtistListTableViewCell.m in Sources */,
 				1F17013F1A902CF300D6F9B2 /* BLineupStageTableViewCell.m in Sources */,
 				1F16903C1A8E31F100D7F134 /* BInfoFifthTableViewCell.m in Sources */,
 				1F2941491A88BCBF00C0AE80 /* ChatsMainViewController.m in Sources */,
 				1F29412B1A88601A00C0AE80 /* FestivalCardTableViewCell.m in Sources */,
+				1F74948F1AC5DF5500A03A3E /* StageAllViewController.m in Sources */,
 				1F16902D1A8E313F00D7F134 /* BInfoSecondTableViewCell.m in Sources */,
 				1F41D5AC1ABBC07900EB1208 /* StageObject.m in Sources */,
 				1F1690321A8E319800D7F134 /* BInfoFirstTableViewCell.m in Sources */,
+				1F3C5EAB1AC46A1400A86345 /* StageMainViewController.m in Sources */,
+				1F7494951AC5E3BA00A03A3E /* StageCardTableViewCell.m in Sources */,
 				1F0936D81A8503130040E606 /* main.m in Sources */,
 				1FBF1F5F1A8B07E10015A527 /* BestivalMapViewController.m in Sources */,
+				1F6909CB1AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.m in Sources */,
 				1F2941091A885B0A00C0AE80 /* SearchFestivalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

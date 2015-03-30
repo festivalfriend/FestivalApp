@@ -20,8 +20,4 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)onClickMore:(id)sender {
-    
-    NSLog(@"More Button Clicked");
-}
 @end

@@ -30,6 +30,7 @@
     [m_view.layer setShadowOffset:CGSizeMake(0, 1.0)];
     
     self.m_ImageView.clipsToBounds = YES;
+    
 }
 
 @end

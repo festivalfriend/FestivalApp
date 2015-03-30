@@ -23,18 +23,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWt-Km-bCV">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Festivals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmX-ww-yDb">
-                            <rect key="frame" x="150" y="31" width="300" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="8rA-Kc-Z3U"/>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="b8Y-nh-l3A"/>
-                                <constraint firstAttribute="width" constant="300" id="jru-bv-tMk"/>
-                                <constraint firstAttribute="height" constant="30" id="rJ3-1b-C9H"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYF-8r-bVA">
                             <rect key="frame" x="0.0" y="31" width="36" height="30"/>
                             <constraints>
@@ -62,6 +50,18 @@
                                 <action selector="onMenu:" destination="-1" eventType="touchUpInside" id="GNX-uC-kC1"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Festivals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmX-ww-yDb">
+                            <rect key="frame" x="150" y="31" width="300" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="8rA-Kc-Z3U"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="b8Y-nh-l3A"/>
+                                <constraint firstAttribute="width" constant="300" id="jru-bv-tMk"/>
+                                <constraint firstAttribute="height" constant="30" id="rJ3-1b-C9H"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.58431375026702881" green="0.79215693473815918" blue="0.42745101451873779" alpha="1" colorSpace="deviceRGB"/>
                     <constraints>
@@ -83,6 +83,17 @@
                         <constraint firstAttribute="trailing" secondItem="3Vj-kY-slD" secondAttribute="trailing" id="y5e-ld-bef"/>
                     </constraints>
                 </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-CM-2b7">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                </activityIndicatorView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="233" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fqz-IK-QUQ">
+                    <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lGX-gN-TPP"/>
+                        <outlet property="delegate" destination="i5M-Pr-FkT" id="vcc-it-E93"/>
+                    </connections>
+                </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-V1-pdj">
                     <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                     <subviews>
@@ -92,7 +103,7 @@
                                 <constraint firstAttribute="width" constant="40" id="Cv7-Mv-Usa"/>
                                 <constraint firstAttribute="height" constant="40" id="WTF-Gd-kPE"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                             <state key="normal" title="All">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -120,7 +131,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="7ms-Tl-vmp"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                             <state key="normal" title="My Festivals">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -144,17 +155,6 @@
                         <constraint firstAttribute="bottom" secondItem="zDu-q5-tgs" secondAttribute="bottom" id="wyg-eq-wp1"/>
                     </constraints>
                 </view>
-                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-CM-2b7">
-                    <rect key="frame" x="290" y="290" width="20" height="20"/>
-                </activityIndicatorView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="233" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fqz-IK-QUQ">
-                    <rect key="frame" x="0.0" y="108" width="600" height="492"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="lGX-gN-TPP"/>
-                        <outlet property="delegate" destination="i5M-Pr-FkT" id="vcc-it-E93"/>
-                    </connections>
-                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

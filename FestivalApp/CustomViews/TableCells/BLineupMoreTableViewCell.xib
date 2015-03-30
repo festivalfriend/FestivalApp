@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -47,9 +47,6 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="onClickMore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vBy-Nc-Esr"/>
-                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -77,6 +74,7 @@
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
             <connections>
+                <outlet property="btnMore" destination="yYk-rQ-acc" id="7iy-ri-RGI"/>
                 <outlet property="m_lblTitle" destination="5cd-pG-tnI" id="Ygw-13-fn9"/>
                 <outlet property="m_viewMore" destination="Khk-Yb-fPx" id="csA-35-yHT"/>
             </connections>

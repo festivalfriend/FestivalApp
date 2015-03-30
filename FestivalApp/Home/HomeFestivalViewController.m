@@ -43,6 +43,7 @@
     self.m_activityIndicator.hidden = NO;
     [self.m_activityIndicator startAnimating];
     
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -59,27 +60,10 @@
 {
     NSMutableArray *arrFestivals;
 
-    arrFestivals = [[NSMutableArray alloc] init];
+    arrFestivals = nil;
     
-    for (NSInteger i=0; i<10; i++) {
-        FestivalObject *tmpFestival;
-        tmpFestival = [[FestivalObject alloc] init];
-        tmpFestival.m_festivalID = i;
-        tmpFestival.m_mainTitle = [NSString stringWithFormat:@"Festival%ld",(long)i];
-        tmpFestival.m_userCnt = i;
-        tmpFestival.b_myFestival = NO;
-        
-        if(i%3==1)
-        {
-            tmpFestival.b_guide = YES;
-            tmpFestival.b_tickets = YES;
-            tmpFestival.b_myFestival = YES;
-        }
-        
-        [arrFestivals addObject:tmpFestival];
-    }
     
-    [SharedManager SharedManager].arrFestivals = arrFestivals;
+    arrFestivals = [SharedManager SharedManager].arrFestivals;
 
     [self getMatchedFestivals];
 //    [self.mainTableView reloadData];
@@ -151,6 +135,8 @@
     cell.TitleLabel.text = tmpFestival.m_mainTitle;
     cell.UserLabel.text = [NSString stringWithFormat:@"%d",tmpFestival.m_userCnt];
     
+
+
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
     
@@ -185,7 +171,7 @@
     self.m_whiteViewAll.hidden = NO;
     self.m_whiteViewMyFestivals.hidden = YES;
     [self.m_btnAll.titleLabel setFont:[UIFont boldSystemFontOfSize:17.0f]];
-    [self.m_btnMyFestival.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
+    [self.m_btnMyFestival.titleLabel setFont:FONT_HELVETICA_REGULAR(17.0f)];
     
     
 }
@@ -200,7 +186,7 @@
     
     self.m_whiteViewAll.hidden = YES;
     self.m_whiteViewMyFestivals.hidden = NO;
-    [self.m_btnAll.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
+    [self.m_btnAll.titleLabel setFont:FONT_HELVETICA_REGULAR(17.0f)];
     [self.m_btnMyFestival.titleLabel setFont:[UIFont boldSystemFontOfSize:17.0f]];
     
 }

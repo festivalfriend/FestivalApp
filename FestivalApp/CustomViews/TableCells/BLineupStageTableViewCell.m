@@ -24,6 +24,8 @@
     [m_view.layer setShadowOpacity:0.5];
     [m_view.layer setShadowRadius:1.0];
     [m_view.layer setShadowOffset:CGSizeMake(0, 1.0)];
+    
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
