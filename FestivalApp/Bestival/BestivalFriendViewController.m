@@ -36,6 +36,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self.lbNavigationBarTitle setText:[SharedManager SharedManager].curFestival.m_mainTitle];
 }
 
 - (void)didReceiveMemoryWarning {

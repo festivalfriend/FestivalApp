@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgViewArtist;
 @property (weak, nonatomic) IBOutlet UILabel *lbArtistName;
-
 @property (weak, nonatomic) IBOutlet UIButton *btnAddCancel;
+@property (nonatomic) BOOL isAdded;
+
 @end

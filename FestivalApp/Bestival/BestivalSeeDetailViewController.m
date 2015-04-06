@@ -21,6 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    self.view.backgroundColor = COLOR_BACKGROUND_VIEW;
+    [self.lbNavigationBarTitle setText:[SharedManager SharedManager].curFestival.m_mainTitle];
+    self.curTabIndex = 0;
+    [self setTabItemSelected:self.curTabIndex];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,6 +68,89 @@
     return 5;
 }
 
+
+- (IBAction)onClickCategory:(id)sender {
+    
+    UIButton *selectedButton = (UIButton *)sender;
+    if(selectedButton == self.btnInfo)
+    {
+        self.curTabIndex = 0;
+    }
+    else if (selectedButton == self.btnSee)
+    {
+        self.curTabIndex = 1;
+    }
+    else if (selectedButton == self.btnEat)
+    {
+        self.curTabIndex = 2;
+    }
+    else if (selectedButton == self.btnDrink)
+    {
+        self.curTabIndex = 3;
+    }
+    else if (selectedButton == self.btnBuy)
+    {
+        self.curTabIndex = 4;
+    }
+    else if (selectedButton == self.btnFacilities)
+        self.curTabIndex = 5;
+    
+    
+    [self setTabItemSelected:self.curTabIndex];
+    
+}
+
+-(void)setTabItemSelected : (NSInteger)selectedID
+{
+    [self clearAllSelectedEffects];
+
+    switch (selectedID) {
+        case 0:
+            self.btnInfo.titleLabel.font = FONT_HELVETICA_MEDIUM(18.0f);
+            self.viewInfo.hidden = NO;
+            break;
+        case 1:
+            self.btnSee.titleLabel.font = FONT_HELVETICA_MEDIUM(18.0f);
+            self.viewSee.hidden = NO;
+            break;
+        case 2:
+            self.btnEat.titleLabel.font = FONT_HELVETICA_MEDIUM(18.0f);
+            self.viewEat.hidden = NO;
+            break;
+        case 3:
+            self.btnDrink.titleLabel.font = FONT_HELVETICA_MEDIUM(18.0f);
+            self.viewDrink.hidden = NO;
+            break;
+        case 4:
+            self.btnBuy.titleLabel.font = FONT_HELVETICA_MEDIUM(18.0f);
+            self.viewBuy.hidden = NO;
+            break;
+        case 5:
+            self.btnFacilities.titleLabel.font = FONT_HELVETICA_MEDIUM(18.0f);
+            self.viewFacilities.hidden = NO;
+            break;
+        default:
+            break;
+    }
+}
+
+-(void)clearAllSelectedEffects
+{
+    self.viewInfo.hidden = YES;
+    self.viewSee.hidden = YES;
+    self.viewEat.hidden = YES;
+    self.viewDrink.hidden = YES;
+    self.viewBuy.hidden = YES;
+    self.viewFacilities.hidden = YES;
+    
+    self.btnInfo.titleLabel.font = FONT_HELVETICA_LIGHT(18.0f);
+    self.btnSee.titleLabel.font = FONT_HELVETICA_LIGHT(18.0f);
+    self.btnEat.titleLabel.font = FONT_HELVETICA_LIGHT(18.0f);
+    self.btnDrink.titleLabel.font = FONT_HELVETICA_LIGHT(18.0f);
+    self.btnBuy.titleLabel.font = FONT_HELVETICA_LIGHT(18.0f);
+    self.btnFacilities.titleLabel.font = FONT_HELVETICA_LIGHT(18.0f);
+    
+}
 
 - (IBAction)onBack:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];

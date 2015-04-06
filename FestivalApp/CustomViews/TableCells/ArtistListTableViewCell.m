@@ -7,11 +7,19 @@
 //
 
 #import "ArtistListTableViewCell.h"
+#import "SharedManager.h"
 
 @implementation ArtistListTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
+    
+    UIView *separatorView = [[UIView alloc] initWithFrame:CGRectMake(10, self.frame.size.height-1, [UIScreen mainScreen].bounds.size.width-20, 1)];
+    separatorView.backgroundColor = COLOR_DIVIDER;
+    [self addSubview:separatorView];
+
+    self.backgroundColor = COLOR_BACKGROUND_VIEW;
+    self.lbArtistName.textColor = COLOR_TEXT_SECONDARY;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -23,7 +31,6 @@
 -(void)layoutSubviews
 {
     self.imgViewArtist.layer.cornerRadius = self.imgViewArtist.layer.frame.size.width/2;
-    
 }
 
 @end

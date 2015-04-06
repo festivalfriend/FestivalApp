@@ -7,6 +7,7 @@
 //
 
 #import "BLineupListTableViewCell.h"
+#import "SharedManager.h"
 
 @implementation BLineupListTableViewCell
 
@@ -22,6 +23,9 @@
     [m_view.layer setShadowOpacity:0.5];
     [m_view.layer setShadowRadius:1.0];
     [m_view.layer setShadowOffset:CGSizeMake(0, 1.0)];
+    m_view.backgroundColor = [UIColor whiteColor];
+    
+    self.backgroundColor = COLOR_BACKGROUND_VIEW;
 }
 
 -(void)layoutSubviews
@@ -36,8 +40,10 @@
 }
 
 - (IBAction)onClickLocation:(id)sender {
+    NSLog(@"Location Button Clicked. This is implemented on TableViewCell");
 }
 
 - (IBAction)onClickCancel:(id)sender {
+    NSLog(@"Cancel Button Clicked. This is implemented on TableViewCell");
 }
 @end

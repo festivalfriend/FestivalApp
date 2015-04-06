@@ -63,6 +63,11 @@
     
     StageCardTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:cellIdentifer owner:self options:nil] objectAtIndex:0];
     
+    if (![SharedManager SharedManager].curFestival.b_guide) {
+        cell.btLocation.hidden = YES;
+        cell.lbStageField.hidden = YES;
+    }
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;

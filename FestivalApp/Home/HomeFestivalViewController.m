@@ -133,7 +133,7 @@
     }
 
     cell.TitleLabel.text = tmpFestival.m_mainTitle;
-    cell.UserLabel.text = [NSString stringWithFormat:@"%d",tmpFestival.m_userCnt];
+    cell.UserLabel.text = [NSString stringWithFormat:@"%ld",(long)tmpFestival.m_userCnt];
     
 
 
@@ -186,8 +186,9 @@
     
     self.m_whiteViewAll.hidden = YES;
     self.m_whiteViewMyFestivals.hidden = NO;
+    
     [self.m_btnAll.titleLabel setFont:FONT_HELVETICA_REGULAR(17.0f)];
-    [self.m_btnMyFestival.titleLabel setFont:[UIFont boldSystemFontOfSize:17.0f]];
+    [self.m_btnMyFestival.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
     
 }
 

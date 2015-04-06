@@ -38,6 +38,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.m_mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.view.backgroundColor = COLOR_BACKGROUND_VIEW;
+    
+    [self.lbNavigationBarTitle setText:[SharedManager SharedManager].curFestival.m_mainTitle];
+    
+    if(![SharedManager SharedManager].curFestival.b_guide)
+    {
+        self.m_mainTableView.delegate = nil;
+        self.m_mainTableView.dataSource = nil;
+        self.lbCheckBack.hidden = NO;
+        self.lbCheckBack.font = FONT_HELVETICA_LIGHT(18.0f);
+        self.lbCheckBack.textColor = COLOR_TEXT_SECONDARY;
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -137,8 +150,6 @@
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
             cell = [nib objectAtIndex:0];
         }
-        
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
     else
@@ -150,6 +161,9 @@
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
             cell = [nib objectAtIndex:0];
         }
+        
+        UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onSelectSeeDoItem:)];
+        [cell addGestureRecognizer:tapRecognizer];
         
         return cell;
         
@@ -173,7 +187,7 @@
     return 15;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)onSelectSeeDoItem : (id)sender
 {
     BestivalSeeDetailViewController *detailVC = [[BestivalSeeDetailViewController alloc] init];
     [self.navigationController pushViewController:detailVC animated:YES];

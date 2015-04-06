@@ -20,6 +20,13 @@
 #import "BLineupMoreTableViewCell.h"
 #import "BLineupButtonsTableViewCell.h"
 
+#import "BuyGuidTableViewCell.h"
+#import "AddArtistsTextTableViewCell.h"
+
+#import "FeaturingSingleTableViewCell.h"
+#import "FeaturingDoubleTableViewCell.h"
+
+
 //For MenuActions
 #import "BestivalInfoViewController.h"
 #import "BestivalLineupViewController.h"
@@ -30,6 +37,9 @@
 #import "ArtistsAllViewController.h"
 #import "StageAllViewController.h"
 #import "StageMainViewController.h"
+#import "MyLineupMainViewController.h"
+#import "ArtistDetailViewController.h"
+#import "FeaturingArtistsViewController.h"
 
 @interface BestivalLineupViewController ()
 
@@ -40,6 +50,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self.m_lineupTableView setBackgroundColor:COLOR_BACKGROUND_VIEW];
+    self.m_lineupTableView.delegate = self;
+    
+    [self.lbNavigationBarTitle setText:[SharedManager SharedManager].curFestival.m_mainTitle];
+    self.is_guid = [SharedManager SharedManager].curFestival.b_guide;
+    
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    [self.m_menuScrollView setContentInset:UIEdgeInsetsMake(0,0,0,0)];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,67 +74,24 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    if(indexPath.row==0)
+    if(self.is_guid)
     {
-        NSString *tableCellIdentifier = @"BLineupButtonsTableViewCell";
-        BLineupButtonsTableViewCell *cell = (BLineupButtonsTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
-        
-        if (cell==nil) {
-            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
-            cell = [nib objectAtIndex:0];
-        }
-        
-        [cell.m_btnAllArtists addTarget:self action:@selector(onAllArtists:) forControlEvents:UIControlEventTouchUpInside];
-        [cell.m_btnStages addTarget:self action:@selector(onAllStages:) forControlEvents:UIControlEventTouchUpInside];
-        
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        return cell;
-    }
-    if(indexPath.row==1)
-    {
-        NSString *tableCellIdentifier = @"BLineupMoreTableViewCell";
-        BLineupMoreTableViewCell *cell = (BLineupMoreTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
-        
-        if (cell==nil) {
-            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
-            cell = [nib objectAtIndex:0];
-        }
-        [cell.m_lblTitle setText:@"My Lineup"];
-        [cell.btnMore addTarget:self action:@selector(onViewMoreLineup:) forControlEvents:UIControlEventTouchUpInside];
-        
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        return cell;
-    }
-    else if(indexPath.row<5)
-    {
-        NSString *tableCellIdentifier = @"BLineupListTableViewCell";
-        BLineupListTableViewCell *cell = (BLineupListTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
-        
-        if (cell==nil) {
-            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
-            cell = [nib objectAtIndex:0];
-        }
-        
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        return cell;
-    }
-    else
-    {
-        if(indexPath.row %2==0)
+        if(indexPath.row==0)
         {
-            NSString *tableCellIdentifier = @"BLineupStageTableViewCell";
-            BLineupStageTableViewCell *cell = (BLineupStageTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
+            NSString *tableCellIdentifier = @"BLineupButtonsTableViewCell";
+            BLineupButtonsTableViewCell *cell = (BLineupButtonsTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
             
             if (cell==nil) {
                 NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
                 cell = [nib objectAtIndex:0];
             }
             
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            [cell.m_btnAllArtists addTarget:self action:@selector(onAllArtists:) forControlEvents:UIControlEventTouchUpInside];
+            [cell.m_btnStages addTarget:self action:@selector(onAllStages:) forControlEvents:UIControlEventTouchUpInside];
             
             return cell;
         }
-        else
+        if(indexPath.row==1)
         {
             NSString *tableCellIdentifier = @"BLineupMoreTableViewCell";
             BLineupMoreTableViewCell *cell = (BLineupMoreTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
@@ -120,49 +100,185 @@
                 NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
                 cell = [nib objectAtIndex:0];
             }
-            NSInteger ind;
-            ind = (indexPath.row-5)/2;
-            cell.btnMore.tag = ind;
+            [cell.m_lblTitle setText:@"My Lineup"];
+            [cell.btnMore addTarget:self action:@selector(onViewMoreLineup:) forControlEvents:UIControlEventTouchUpInside];
             
-            [cell.btnMore addTarget:self action:@selector(onViewMoreStages:) forControlEvents:UIControlEventTouchUpInside];
+            return cell;
+        }
+        else if(indexPath.row<5)
+        {
+            NSString *tableCellIdentifier = @"BLineupListTableViewCell";
+            BLineupListTableViewCell *cell = (BLineupListTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
             
+            if (cell==nil) {
+                NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
+                cell = [nib objectAtIndex:0];
+            }
             
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            UITapGestureRecognizer *tapSelectArtist = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapArtistOnMyLineup:)];
+            [cell addGestureRecognizer:tapSelectArtist];
+            
+            return cell;
+        }
+        else
+        {
+            if(indexPath.row %2==0)
+            {
+                NSString *tableCellIdentifier = @"BLineupStageTableViewCell";
+                BLineupStageTableViewCell *cell = (BLineupStageTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
+                
+                if (cell==nil) {
+                    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
+                    cell = [nib objectAtIndex:0];
+                }
+                
+                return cell;
+            }
+            else
+            {
+                NSString *tableCellIdentifier = @"BLineupMoreTableViewCell";
+                BLineupMoreTableViewCell *cell = (BLineupMoreTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
+                
+                if (cell==nil) {
+                    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableCellIdentifier owner:self options:nil];
+                    cell = [nib objectAtIndex:0];
+                }
+                NSInteger ind;
+                ind = (indexPath.row-5)/2;
+                cell.btnMore.tag = ind;
+                
+                [cell.btnMore addTarget:self action:@selector(onViewMoreStages:) forControlEvents:UIControlEventTouchUpInside];
+                
+                return cell;
+            }
+        }
+    }
+    else // Not Bought Guid
+    {
+        NSString *cellIdentifier = @"";
+        if(indexPath.row==0)
+        {
+            cellIdentifier = @"BLineupButtonsTableViewCell";
+            BLineupButtonsTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:cellIdentifier owner:self options:nil] objectAtIndex:0];
+
+            [cell.m_btnAllArtists addTarget:self action:@selector(onAllArtists:) forControlEvents:UIControlEventTouchUpInside];
+            [cell.m_btnStages addTarget:self action:@selector(onAllStages:) forControlEvents:UIControlEventTouchUpInside];
+            
             return cell;
             
         }
+        else if(indexPath.row==1)
+        {
+            cellIdentifier = @"BLineupMoreTableViewCell";
+            BLineupMoreTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:cellIdentifier owner:self options:nil] objectAtIndex:0];
+            [cell.m_lblTitle setText:@"My Lineup"];
+            [cell.btnMore addTarget:self action:@selector(onViewMoreLineup:) forControlEvents:UIControlEventTouchUpInside];
+            
+            return cell;
+        }
         
+        if(indexPath.row == 2)
+        {
+            cellIdentifier = @"BuyGuidTableViewCell";
+            BuyGuidTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:cellIdentifier owner:self options:nil] objectAtIndex:0];
+            
+            [cell.btnBuy addTarget:self action:@selector(onBuyGuid:) forControlEvents:UIControlEventTouchUpInside];
+            
+            return cell;
+        }
+        else if (indexPath.row == 3)
+        {
+            NSString *cellIdentifier = @"BLineupMoreTableViewCell";
+            BLineupMoreTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:cellIdentifier owner:self options:nil] objectAtIndex:0];
+//            NSInteger ind;
+//            ind = (indexPath.row-5)/2;
+//            cell.btnMore.tag = ind;
+            cell.m_lblTitle.text = @"Featuring";
+            
+            [cell.btnMore addTarget:self action:@selector(onTapFeaturingMore:) forControlEvents:UIControlEventTouchUpInside];
+            
+            return cell;
+        }
+        else
+        {
+            NSInteger ind;
+            ind = indexPath.row-4;
+            
+            if(ind%2==1)
+            {
+                cellIdentifier = @"FeaturingDoubleTableViewCell";
+                FeaturingDoubleTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:cellIdentifier owner:self options:nil] objectAtIndex:0];
+                return cell;
+            }
+            else
+            {
+                cellIdentifier = @"FeaturingSingleTableViewCell";
+                FeaturingSingleTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:cellIdentifier owner:self options:nil] objectAtIndex:0];
+                return cell;
+            }
+        }
     }
+    
+    return nil;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.row==0)
+    if(self.is_guid)
     {
-        return 44;
-    }
-    else if(indexPath.row==1)
-    {
-        return 35;
-    }
-    else if(indexPath.row<5)
-    {
-        return 82;
-    }
-    else
-    {
-        if(indexPath.row %2 ==0)
+        if(indexPath.row==0)
         {
-            return 65;
+            return 44;
         }
-        else{
+        else if(indexPath.row==1)
+        {
             return 35;
         }
+        else if(indexPath.row<5)
+        {
+            return 82;
+        }
+        else
+        {
+            if(indexPath.row %2 ==0)
+            {
+                return 65;
+            }
+            else{
+                return 35;
+            }
+        }
     }
+    else // Not Bought Guid
+    {
+        if(indexPath.row==0)
+        {
+            return 44;
+        }
+        else if(indexPath.row==1)
+        {
+            return 35;
+        }
+        else if(indexPath.row==2)
+            return 140;
+        else if (indexPath.row == 3)
+            return 35;
+        else
+            return 82;
+    }
+    
+    return 0;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 15;
+    if(self.is_guid)
+    {
+        return 15;
+    }
+    else
+    {
+        return 15;
+    }
 }
 
 
@@ -261,14 +377,42 @@
 #pragma mark - MoreButton Actions
 -(void)onViewMoreLineup : (id)sender
 {
-    NSLog(@"LineUp More Button Clicked");
+//    NSLog(@"LineUp More Button Clicked");
+    
+    if(![SharedManager SharedManager].curFestival.b_guide)
+        return;
+    MyLineupMainViewController *myLineupMoreVc = [[MyLineupMainViewController alloc] init];
+    [self.navigationController pushViewController:myLineupMoreVc animated:YES];
 }
 -(void)onViewMoreStages : (UIButton *)sender
 {
-    NSLog(@"Tag:%ld",(long)sender.tag);
+//    NSLog(@"Tag:%ld",(long)sender.tag);
     StageMainViewController *stageMainVC = [[StageMainViewController alloc] init];
     
     [self.navigationController pushViewController:stageMainVC animated:YES];
 }
+
+-(void)onTapArtistOnMyLineup : (id)sender
+{
+    NSLog(@"Tap on Artist of My Lineup");
+    ArtistDetailViewController *artistDetailVC = [[ArtistDetailViewController alloc] init];
+    [self.navigationController pushViewController:artistDetailVC animated:YES];
+}
+
+-(void)onTapFeaturingMore : (id)sender
+{
+    FeaturingArtistsViewController *featuringVC = [[FeaturingArtistsViewController alloc] init];
+    [self.navigationController pushViewController:featuringVC animated:YES];
+}
+
+-(void)onBuyGuid : (id)sender
+{
+    [SharedManager SharedManager].curFestival.b_guide = YES;
+    self.is_guid = [SharedManager SharedManager].curFestival.b_guide;
+    [[SharedManager SharedManager] update];
+    
+    [self.m_lineupTableView reloadData];
+}
+
 
 @end

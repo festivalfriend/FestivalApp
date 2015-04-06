@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BestivalFriendViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *lbNavigationBarTitle;
 @property (weak, nonatomic) IBOutlet UIScrollView *m_menuScrollView;
 @property (weak, nonatomic) IBOutlet UIView *m_menuView;
 @property (weak, nonatomic) IBOutlet UITableView *m_mainTableView;

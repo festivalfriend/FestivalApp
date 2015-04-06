@@ -30,6 +30,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self.lbNavigationBarTitle setText:[SharedManager SharedManager].curFestival.m_mainTitle];
+    
+    if(![SharedManager SharedManager].curFestival.b_guide)
+    {
+        self.m_mainTableView.delegate = nil;
+        self.m_mainTableView.dataSource = nil;
+        self.lbCheckBack.hidden = NO;
+        self.lbCheckBack.textColor = COLOR_TEXT_SECONDARY;
+        self.lbCheckBack.font = FONT_HELVETICA_LIGHT(18.0f);
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {

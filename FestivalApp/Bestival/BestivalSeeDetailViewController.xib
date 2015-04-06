@@ -6,8 +6,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BestivalSeeDetailViewController">
             <connections>
+                <outlet property="btnBuy" destination="wth-2U-hoK" id="V8W-9H-AhQ"/>
+                <outlet property="btnDrink" destination="afL-uy-qsV" id="wvo-ma-FWD"/>
+                <outlet property="btnEat" destination="afa-Yp-E0r" id="QJx-Bk-0j3"/>
+                <outlet property="btnFacilities" destination="VCb-Ig-RnH" id="Yhh-Rh-lrF"/>
+                <outlet property="btnInfo" destination="r70-oS-9GB" id="IJV-EM-TzX"/>
+                <outlet property="btnSee" destination="xpx-VV-ZKG" id="4gX-LF-jB9"/>
+                <outlet property="lbNavigationBarTitle" destination="Aiq-Qb-H8c" id="E0f-uH-mSu"/>
                 <outlet property="m_mainTableView" destination="6wM-GJ-8ia" id="FN0-cg-Wcv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBuy" destination="27C-6t-YB5" id="1Ho-nw-XSn"/>
+                <outlet property="viewDrink" destination="5uB-SW-ggR" id="olm-MW-uE9"/>
+                <outlet property="viewEat" destination="Rzc-Sz-Iq9" id="YCy-qC-5rb"/>
+                <outlet property="viewFacilities" destination="fje-Jp-l9q" id="5Dy-W8-TiO"/>
+                <outlet property="viewInfo" destination="u8h-Mh-KDl" id="cRd-Sp-llt"/>
+                <outlet property="viewSee" destination="k3k-ok-mwF" id="gHW-6a-4Qt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,12 +31,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujW-aY-FIc">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bestival" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aiq-Qb-H8c">
-                            <rect key="frame" x="269" y="40" width="63" height="21"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnx-ca-H8m">
                             <rect key="frame" x="564" y="31" width="36" height="30"/>
                             <constraints>
@@ -47,6 +54,12 @@
                                 <action selector="onBack:" destination="-1" eventType="touchUpInside" id="ogR-uC-yyv"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bestival" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aiq-Qb-H8c">
+                            <rect key="frame" x="269" y="35" width="63" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.58431375029999999" green="0.79215693470000004" blue="0.4274510145" alpha="1" colorSpace="deviceRGB"/>
                     <constraints>
@@ -54,9 +67,9 @@
                         <constraint firstItem="dy8-bB-lLW" firstAttribute="leading" secondItem="ujW-aY-FIc" secondAttribute="leading" id="DLs-by-6K1"/>
                         <constraint firstAttribute="height" constant="64" id="LA7-Bd-fNK"/>
                         <constraint firstAttribute="trailing" secondItem="fnx-ca-H8m" secondAttribute="trailing" id="LlI-iI-ieq"/>
+                        <constraint firstAttribute="bottom" secondItem="Aiq-Qb-H8c" secondAttribute="bottom" constant="8" id="Xln-nA-YJZ"/>
                         <constraint firstAttribute="bottom" secondItem="fnx-ca-H8m" secondAttribute="bottom" constant="3" id="jrc-VH-2Lh"/>
                         <constraint firstAttribute="bottom" secondItem="dy8-bB-lLW" secondAttribute="bottom" constant="3" id="oZa-AW-TIW"/>
-                        <constraint firstAttribute="bottom" secondItem="Aiq-Qb-H8c" secondAttribute="bottom" constant="3" id="ys8-0H-vea"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6N-C7-syW">
@@ -68,61 +81,96 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AS-zC-iBt" userLabel="Menu View">
                                     <rect key="frame" x="0.0" y="0.0" width="420" height="44"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpx-VV-ZKG">
-                                            <rect key="frame" x="20" y="0.0" width="50" height="40"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r70-oS-9GB" userLabel="Button - Info">
+                                            <rect key="frame" x="20" y="0.0" width="60" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <state key="normal" title="Info">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="onClickCategory:" destination="-1" eventType="touchUpInside" id="b2i-p8-HzB"/>
+                                            </connections>
+                                        </button>
+                                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u8h-Mh-KDl" userLabel=" View - info">
+                                            <rect key="frame" x="20" y="40" width="60" height="4"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpx-VV-ZKG" userLabel="Button - See">
+                                            <rect key="frame" x="88" y="0.0" width="50" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <state key="normal" title="See">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="onClickCategory:" destination="-1" eventType="touchUpInside" id="yXV-hL-OA4"/>
+                                            </connections>
                                         </button>
-                                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k3k-ok-mwF">
+                                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k3k-ok-mwF" userLabel="View - See">
+                                            <rect key="frame" x="88" y="40" width="50" height="4"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5uB-SW-ggR">
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afa-Yp-E0r" userLabel="Button - Eat">
+                                            <rect key="frame" x="146" y="0.0" width="60" height="40"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <state key="normal" title="Eat">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="onClickCategory:" destination="-1" eventType="touchUpInside" id="a9c-WQ-cdc"/>
+                                            </connections>
+                                        </button>
+                                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rzc-Sz-Iq9" userLabel="View - Eat">
+                                            <rect key="frame" x="146" y="40" width="60" height="4"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afL-uy-qsV">
-                                            <rect key="frame" x="170" y="0.0" width="80" height="40"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afL-uy-qsV" userLabel="Button - Drink">
+                                            <rect key="frame" x="214" y="0.0" width="60" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <state key="normal" title="Drink">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="onClickCategory:" destination="-1" eventType="touchUpInside" id="hPq-mz-TWI"/>
+                                            </connections>
                                         </button>
-                                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="27C-6t-YB5">
+                                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5uB-SW-ggR" userLabel="View - Drink">
+                                            <rect key="frame" x="214" y="40" width="60" height="4"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wth-2U-hoK">
-                                            <rect key="frame" x="270" y="0.0" width="40" height="40"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wth-2U-hoK" userLabel="Button - Buy">
+                                            <rect key="frame" x="282" y="0.0" width="40" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <state key="normal" title="Buy">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="onClickCategory:" destination="-1" eventType="touchUpInside" id="9ff-dV-kLQ"/>
+                                            </connections>
                                         </button>
-                                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fje-Jp-l9q">
+                                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="27C-6t-YB5" userLabel="View - Buy">
+                                            <rect key="frame" x="282" y="40" width="40" height="4"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCb-Ig-RnH">
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCb-Ig-RnH" userLabel="Button - Facilities">
                                             <rect key="frame" x="330" y="0.0" width="70" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <state key="normal" title="Facilities">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="onClickCategory:" destination="-1" eventType="touchUpInside" id="C1f-b6-NFm"/>
+                                            </connections>
                                         </button>
-                                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rzc-Sz-Iq9">
+                                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fje-Jp-l9q" userLabel="View - Facilities">
+                                            <rect key="frame" x="330" y="40" width="70" height="4"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afa-Yp-E0r">
-                                            <rect key="frame" x="90" y="0.0" width="60" height="40"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <state key="normal" title="Eat">
-                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="420" id="hY2-qW-iYx"/>
@@ -148,9 +196,9 @@
                         <constraint firstAttribute="height" constant="44" id="oqC-GQ-RKL"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6wM-GJ-8ia">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6wM-GJ-8ia">
                     <rect key="frame" x="0.0" y="108" width="600" height="492"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="UFt-nT-vjK"/>
                         <outlet property="delegate" destination="-1" id="wK5-UQ-8Xd"/>

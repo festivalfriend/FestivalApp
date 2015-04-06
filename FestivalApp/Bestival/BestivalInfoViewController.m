@@ -10,7 +10,6 @@
 #import "AppDelegate.h"
 #import "SWRevealViewController.h"
 #import "SharedManager.h"
-#import "common_variables.h"
 
 #import "BInfoFirstTableViewCell.h"
 #import "BInfoSecondTableViewCell.h"
@@ -38,6 +37,9 @@
     [self.view setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
     [self.m_mainTableView setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
     self.m_mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    
+    [self.lbNavigationBarTitle setText:[SharedManager SharedManager].curFestival.m_mainTitle];
     
 }
 
@@ -176,10 +178,17 @@
             if([SharedManager SharedManager].curFestival.b_myFestival)
             {
                 [cell.m_btnAction setTag:1];//Already Added
+                [cell.m_lblStatus setText:@"My Festivals"];
+                [cell.m_btnAction setImage:[UIImage imageNamed:@"icon_cancel"] forState:UIControlStateNormal];
+                NSLog(@"**Added to My Festivals");
+
             }
             else
             {
                 [cell.m_btnAction setTag:0];
+                [cell.m_lblStatus setText:@"Add to My Festivals"];
+                [cell.m_btnAction setImage:[UIImage imageNamed:@"icon_plus"] forState:UIControlStateNormal];
+                NSLog(@"**Cancelled from My Festivals");
             }
             [cell.m_btnAction addTarget:self action:@selector(onCancelMyFestival:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -196,7 +205,6 @@
             }
             
             [cell setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
-            
             
             if([SharedManager SharedManager].curFestival.b_tickets)
             {
@@ -226,7 +234,10 @@
             }
             [cell setBackgroundColor:[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1]];
             
-            [cell.m_textView setText:[SharedManager SharedManager].curFestival.m_contents];
+//            [cell.m_textView setText:[SharedManager SharedManager].curFestival.m_contents];
+            [cell.m_textView setText:@"Bestival is an award winning 4 day boutique music festival set at Ribin Hill - a beautiful leafy country park(a veritable Garden of Eden!) near Downend and Newport in the heart of the Isle of Wight."];
+            cell.m_textView.textColor = COLOR_TEXT_SECONDARY;
+            cell.m_textView.font = FONT_HELVETICA_REGULAR(14.0f);
 
             return cell;
             break;
@@ -254,12 +265,6 @@
     }
     
 }
--(CGFloat)getTextHeight:(NSString*)text width:(float)width fontSize: (float)fontSize
-{
-    NSDictionary *attributesDictionary = [NSDictionary dictionaryWithObject:[UIFont systemFontOfSize:fontSize] forKey: NSFontAttributeName];
-    CGRect frame = [text boundingRectWithSize:CGSizeMake(width, 3000) options:NSStringDrawingTruncatesLastVisibleLine|NSStringDrawingUsesLineFragmentOrigin attributes:attributesDictionary context:nil];
-    return frame.size.height+20;
-}
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -277,7 +282,7 @@
             h_height = 55;
             break;
         case 3:
-            h_height = [self getTextHeight:str_string width:[UIScreen mainScreen].bounds.size.width-20 fontSize:14.0f ];
+            h_height = [SharedManager getTextHeight:str_string width:[UIScreen mainScreen].bounds.size.width-20 fontSize:14.0f ];
             break;
         case 4:
             h_height = 55;
@@ -305,7 +310,8 @@
     BInfoSecondTableViewCell *cell = (BInfoSecondTableViewCell *)[self.m_mainTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
 
     [SharedManager SharedManager].curFestival.b_myFestival = ![SharedManager SharedManager].curFestival.b_myFestival;
-    
+    [[SharedManager SharedManager] update];
+
     if(btnTarget.tag == 0)// Current status is "Add to My Festivals"
     {
         [btnTarget setTag:1];
@@ -335,6 +341,7 @@
     [cell.m_lblTickets setText:@"Tickets"];
 
     [SharedManager SharedManager].curFestival.b_tickets = ![SharedManager SharedManager].curFestival.b_tickets;
+    [[SharedManager SharedManager] update];
     
     
 }
@@ -346,6 +353,7 @@
     cell.m_imgGuideStatus.hidden = NO;
     [cell.m_lblGuide setText:@"Guide"];
     [SharedManager SharedManager].curFestival.b_guide = ![SharedManager SharedManager].curFestival.b_guide;
+    [[SharedManager SharedManager] update];
 
 }
 

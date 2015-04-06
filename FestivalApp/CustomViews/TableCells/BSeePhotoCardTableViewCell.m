@@ -7,6 +7,7 @@
 //
 
 #import "BSeePhotoCardTableViewCell.h"
+#import "SharedManager.h"
 
 @implementation BSeePhotoCardTableViewCell
 
@@ -14,10 +15,12 @@
     // Initialization code
     
     [self drawRoundRectwithShadow:self.m_contentView];
+    self.backgroundColor = COLOR_BACKGROUND_VIEW;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
+    
 
     // Configure the view for the selected state
 }

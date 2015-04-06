@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface BestivalLineupViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UILabel *lbNavigationBarTitle;
+
 @property (weak, nonatomic) IBOutlet UIScrollView *m_menuScrollView;
 @property (weak, nonatomic) IBOutlet UIView *m_menuView;
 @property (weak, nonatomic) IBOutlet UITableView *m_lineupTableView;
 
+@property (nonatomic) BOOL is_guid;
 
 
 - (IBAction)onClickBack:(id)sender;

@@ -7,12 +7,15 @@
 //
 
 #import "BLineupButtonsTableViewCell.h"
+#import "SharedManager.h"
+
 
 @implementation BLineupButtonsTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
     
+    self.backgroundColor = COLOR_BACKGROUND_VIEW;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

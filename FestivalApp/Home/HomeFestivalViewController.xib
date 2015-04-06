@@ -175,6 +175,7 @@
                 <constraint firstItem="OWt-Km-bCV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sq9-fx-AbI"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <point key="canvasLocation" x="7" y="76"/>
         </view>
     </objects>
     <resources>

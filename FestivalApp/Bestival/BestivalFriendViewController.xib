@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BestivalFriendViewController">
             <connections>
+                <outlet property="lbNavigationBarTitle" destination="75w-YS-Odh" id="GRQ-t0-9Yn"/>
                 <outlet property="m_mainTableView" destination="1Aa-WL-gIg" id="Zm2-Kq-qG3"/>
                 <outlet property="m_menuScrollView" destination="JGc-6v-gkA" id="FSu-q2-V8i"/>
                 <outlet property="m_menuView" destination="z1U-24-zcF" id="3aX-73-IhV"/>
@@ -20,12 +21,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAW-Ac-pUR">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bestival" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75w-YS-Odh">
-                            <rect key="frame" x="269" y="40" width="63" height="21"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kux-SJ-Wi3">
                             <rect key="frame" x="0.0" y="31" width="36" height="30"/>
                             <constraints>
@@ -52,6 +47,12 @@
                                 <action selector="onClickMenu:" destination="-1" eventType="touchUpInside" id="zG5-VN-0rh"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bestival" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75w-YS-Odh">
+                            <rect key="frame" x="269" y="35" width="63" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.58431375029999999" green="0.79215693470000004" blue="0.4274510145" alpha="1" colorSpace="deviceRGB"/>
                     <constraints>
@@ -59,8 +60,8 @@
                         <constraint firstAttribute="height" constant="64" id="GpL-fc-dpu"/>
                         <constraint firstAttribute="trailing" secondItem="ABi-LZ-1Bi" secondAttribute="trailing" id="RjA-xe-Fwz"/>
                         <constraint firstAttribute="bottom" secondItem="Kux-SJ-Wi3" secondAttribute="bottom" constant="3" id="UaW-le-zJl"/>
-                        <constraint firstAttribute="bottom" secondItem="75w-YS-Odh" secondAttribute="bottom" constant="3" id="dUX-0q-W6w"/>
                         <constraint firstAttribute="bottom" secondItem="ABi-LZ-1Bi" secondAttribute="bottom" constant="3" id="hbo-qP-cXK"/>
+                        <constraint firstAttribute="bottom" secondItem="75w-YS-Odh" secondAttribute="bottom" constant="8" id="owC-kc-iIE"/>
                         <constraint firstAttribute="centerX" secondItem="75w-YS-Odh" secondAttribute="centerX" id="z51-En-MPQ"/>
                     </constraints>
                 </view>

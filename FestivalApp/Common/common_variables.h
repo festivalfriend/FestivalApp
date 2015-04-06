@@ -23,6 +23,7 @@
 #define COLOR_STAGE_HAPPENED [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7f]
 
 #define COLOR_DIVIDER [UIColor colorWithRed:0 green:0 blue:0 alpha:0.12f]
+#define COLOR_BACKGROUND_VIEW [UIColor colorWithRed:242/255.0f green:242/255.0f blue:242/255.0f alpha:1.0f]
 
 #pragma mark - Fonts and FontSizes
 
@@ -32,7 +33,7 @@
 
 
 #define FONT_HELVETICA_LIGHT(s) [UIFont fontWithName:@"HelveticaNeue-Light" size:s]
-#define FONT_HELVETICA_REGULAR(s) [UIFont fontWithName:@"HelveticaNeue-Regular" size:s]
+#define FONT_HELVETICA_REGULAR(s) [UIFont fontWithName:@"HelveticaNeue" size:s]
 #define FONT_HELVETICA_MEDIUM(s) [UIFont fontWithName:@"HelveticaNeue-Medium" size:s]
 
 #endif

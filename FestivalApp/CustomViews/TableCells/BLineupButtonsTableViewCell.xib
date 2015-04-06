@@ -48,7 +48,6 @@
                     <constraint firstItem="Li5-EQ-gNx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="icB-3Q-SL6"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
             <connections>
                 <outlet property="m_btnAllArtists" destination="9Eg-SC-ZyK" id="F0Y-U2-fbH"/>
                 <outlet property="m_btnStages" destination="Li5-EQ-gNx" id="XVh-eJ-Hw1"/>

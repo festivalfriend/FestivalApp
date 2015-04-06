@@ -72,7 +72,6 @@
                     <constraint firstAttribute="trailingMargin" secondItem="Khk-Yb-fPx" secondAttribute="trailing" constant="2" id="vq2-ht-7SV"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.9450981021" green="0.9450981021" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
             <connections>
                 <outlet property="btnMore" destination="yYk-rQ-acc" id="7iy-ri-RGI"/>
                 <outlet property="m_lblTitle" destination="5cd-pG-tnI" id="Ygw-13-fn9"/>

@@ -7,6 +7,7 @@
 //
 
 #import "BLineupStageTableViewCell.h"
+#import "SharedManager.h"
 
 @implementation BLineupStageTableViewCell
 
@@ -25,7 +26,7 @@
     [m_view.layer setShadowRadius:1.0];
     [m_view.layer setShadowOffset:CGSizeMake(0, 1.0)];
     
-    
+    self.backgroundColor = COLOR_BACKGROUND_VIEW;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

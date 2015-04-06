@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StageMainViewController : UIViewController
+@interface StageMainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lbStageName;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnInfo;
@@ -22,5 +22,11 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableviewMain;
 
+@property (nonatomic)NSInteger curTabIndex;
+
 - (IBAction)onClickDayMenu:(id)sender;
+- (IBAction)onBack:(id)sender;
+- (IBAction)onMenu:(id)sender;
+
+
 @end

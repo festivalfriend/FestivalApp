@@ -7,6 +7,7 @@
 //
 
 #import "BSeeCategoryTableViewCell.h"
+#import "SharedManager.h"
 
 @implementation BSeeCategoryTableViewCell
 
@@ -17,6 +18,7 @@
 -(void)layoutSubviews
 {
     self.m_contentScrollView.contentSize = self.m_contentView.frame.size;
+    self.backgroundColor = COLOR_BACKGROUND_VIEW;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

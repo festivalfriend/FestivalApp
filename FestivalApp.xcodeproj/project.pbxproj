@@ -95,6 +95,19 @@
 		1F3DD9461AB97629006F25C2 /* BFriendFestivalsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DD9441AB97629006F25C2 /* BFriendFestivalsTableViewCell.xib */; };
 		1F41D5A91ABBBFF300EB1208 /* ArtistsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41D5A81ABBBFF300EB1208 /* ArtistsObject.m */; };
 		1F41D5AC1ABBC07900EB1208 /* StageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41D5AB1ABBC07900EB1208 /* StageObject.m */; };
+		1F42B1AD1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F42B1AB1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.m */; };
+		1F42B1AE1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F42B1AC1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.xib */; };
+		1F42B1B21ACA9FCC007F52CB /* ArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F42B1B01ACA9FCC007F52CB /* ArtistDetailViewController.m */; };
+		1F42B1B31ACA9FCC007F52CB /* ArtistDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F42B1B11ACA9FCC007F52CB /* ArtistDetailViewController.xib */; };
+		1F42B1B81ACD3C35007F52CB /* MyLineupMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F42B1B61ACD3C35007F52CB /* MyLineupMainViewController.m */; };
+		1F42B1B91ACD3C35007F52CB /* MyLineupMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F42B1B71ACD3C35007F52CB /* MyLineupMainViewController.xib */; };
+		1F42B1BD1ACD9645007F52CB /* BuyGuidTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F42B1BB1ACD9645007F52CB /* BuyGuidTableViewCell.m */; };
+		1F42B1BE1ACD9645007F52CB /* BuyGuidTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F42B1BC1ACD9645007F52CB /* BuyGuidTableViewCell.xib */; };
+		1F42B1C21ACDA200007F52CB /* AddArtistsTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F42B1C01ACDA200007F52CB /* AddArtistsTextTableViewCell.m */; };
+		1F42B1C31ACDA200007F52CB /* AddArtistsTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F42B1C11ACDA200007F52CB /* AddArtistsTextTableViewCell.xib */; };
+		1F4B5FDD1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B5FDB1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.m */; };
+		1F4B5FDE1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4B5FDC1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.xib */; };
+		1F4B5FE21AC9BFE0007A9994 /* FFTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B5FE11AC9BFE0007A9994 /* FFTextView.m */; };
 		1F6038B71A949D34000FA4B1 /* BLineupButtonsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6038B51A949D34000FA4B1 /* BLineupButtonsTableViewCell.m */; };
 		1F6038B81A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6038B61A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib */; };
 		1F6909C61AC8EFF400F560C1 /* icon_add_gery.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6909C41AC8EFF400F560C1 /* icon_add_gery.png */; };
@@ -107,6 +120,14 @@
 		1F7494901AC5DF5500A03A3E /* StageAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F74948E1AC5DF5500A03A3E /* StageAllViewController.xib */; };
 		1F7494951AC5E3BA00A03A3E /* StageCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7494931AC5E3BA00A03A3E /* StageCardTableViewCell.m */; };
 		1F7494961AC5E3BA00A03A3E /* StageCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7494941AC5E3BA00A03A3E /* StageCardTableViewCell.xib */; };
+		1FA903E81ACE3EB200E6583F /* FeaturingSingleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA903E61ACE3EB200E6583F /* FeaturingSingleTableViewCell.m */; };
+		1FA903E91ACE3EB200E6583F /* FeaturingSingleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA903E71ACE3EB200E6583F /* FeaturingSingleTableViewCell.xib */; };
+		1FA903ED1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA903EB1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.m */; };
+		1FA903EE1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA903EC1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.xib */; };
+		1FA903F11ACE715C00E6583F /* ArtistCardHalf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA903F01ACE715C00E6583F /* ArtistCardHalf.m */; };
+		1FA903F61ACE879300E6583F /* ArtistCardSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA903F51ACE879300E6583F /* ArtistCardSingle.m */; };
+		1FA903FA1ACEF6A200E6583F /* FeaturingArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA903F81ACEF6A200E6583F /* FeaturingArtistsViewController.m */; };
+		1FA903FB1ACEF6A200E6583F /* FeaturingArtistsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA903F91ACEF6A200E6583F /* FeaturingArtistsViewController.xib */; };
 		1FB48F6C1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB48F6A1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m */; };
 		1FB48F6D1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB48F6B1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib */; };
 		1FBF1F551A8B07AE0015A527 /* BestivalLineupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF1F531A8B07AE0015A527 /* BestivalLineupViewController.m */; };
@@ -265,6 +286,26 @@
 		1F41D5A81ABBBFF300EB1208 /* ArtistsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistsObject.m; path = CustomObjects/ArtistsObject.m; sourceTree = "<group>"; };
 		1F41D5AA1ABBC07900EB1208 /* StageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StageObject.h; path = CustomObjects/StageObject.h; sourceTree = "<group>"; };
 		1F41D5AB1ABBC07900EB1208 /* StageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StageObject.m; path = CustomObjects/StageObject.m; sourceTree = "<group>"; };
+		1F42B1AA1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistInfoHeaderTableViewCell.h; path = TableCells/ArtistInfoHeaderTableViewCell.h; sourceTree = "<group>"; };
+		1F42B1AB1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistInfoHeaderTableViewCell.m; path = TableCells/ArtistInfoHeaderTableViewCell.m; sourceTree = "<group>"; };
+		1F42B1AC1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtistInfoHeaderTableViewCell.xib; path = TableCells/ArtistInfoHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		1F42B1AF1ACA9FCC007F52CB /* ArtistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistDetailViewController.h; path = Artists/ArtistDetailViewController.h; sourceTree = "<group>"; };
+		1F42B1B01ACA9FCC007F52CB /* ArtistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistDetailViewController.m; path = Artists/ArtistDetailViewController.m; sourceTree = "<group>"; };
+		1F42B1B11ACA9FCC007F52CB /* ArtistDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtistDetailViewController.xib; path = Artists/ArtistDetailViewController.xib; sourceTree = "<group>"; };
+		1F42B1B51ACD3C35007F52CB /* MyLineupMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLineupMainViewController.h; path = MyLineup/MyLineupMainViewController.h; sourceTree = "<group>"; };
+		1F42B1B61ACD3C35007F52CB /* MyLineupMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLineupMainViewController.m; path = MyLineup/MyLineupMainViewController.m; sourceTree = "<group>"; };
+		1F42B1B71ACD3C35007F52CB /* MyLineupMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyLineupMainViewController.xib; path = MyLineup/MyLineupMainViewController.xib; sourceTree = "<group>"; };
+		1F42B1BA1ACD9645007F52CB /* BuyGuidTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuyGuidTableViewCell.h; path = TableCells/BuyGuidTableViewCell.h; sourceTree = "<group>"; };
+		1F42B1BB1ACD9645007F52CB /* BuyGuidTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuyGuidTableViewCell.m; path = TableCells/BuyGuidTableViewCell.m; sourceTree = "<group>"; };
+		1F42B1BC1ACD9645007F52CB /* BuyGuidTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BuyGuidTableViewCell.xib; path = TableCells/BuyGuidTableViewCell.xib; sourceTree = "<group>"; };
+		1F42B1BF1ACDA200007F52CB /* AddArtistsTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddArtistsTextTableViewCell.h; path = TableCells/AddArtistsTextTableViewCell.h; sourceTree = "<group>"; };
+		1F42B1C01ACDA200007F52CB /* AddArtistsTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddArtistsTextTableViewCell.m; path = TableCells/AddArtistsTextTableViewCell.m; sourceTree = "<group>"; };
+		1F42B1C11ACDA200007F52CB /* AddArtistsTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddArtistsTextTableViewCell.xib; path = TableCells/AddArtistsTextTableViewCell.xib; sourceTree = "<group>"; };
+		1F4B5FDA1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StageInfoHeaderTableViewCell.h; path = TableCells/StageInfoHeaderTableViewCell.h; sourceTree = "<group>"; };
+		1F4B5FDB1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StageInfoHeaderTableViewCell.m; path = TableCells/StageInfoHeaderTableViewCell.m; sourceTree = "<group>"; };
+		1F4B5FDC1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StageInfoHeaderTableViewCell.xib; path = TableCells/StageInfoHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		1F4B5FE01AC9BFE0007A9994 /* FFTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFTextView.h; path = CustomObjects/FFTextView.h; sourceTree = "<group>"; };
+		1F4B5FE11AC9BFE0007A9994 /* FFTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFTextView.m; path = CustomObjects/FFTextView.m; sourceTree = "<group>"; };
 		1F6038B41A949D34000FA4B1 /* BLineupButtonsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLineupButtonsTableViewCell.h; path = TableCells/BLineupButtonsTableViewCell.h; sourceTree = "<group>"; };
 		1F6038B51A949D34000FA4B1 /* BLineupButtonsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLineupButtonsTableViewCell.m; path = TableCells/BLineupButtonsTableViewCell.m; sourceTree = "<group>"; };
 		1F6038B61A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BLineupButtonsTableViewCell.xib; path = TableCells/BLineupButtonsTableViewCell.xib; sourceTree = "<group>"; };
@@ -282,6 +323,19 @@
 		1F7494921AC5E3BA00A03A3E /* StageCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StageCardTableViewCell.h; path = Cards/StageCardTableViewCell.h; sourceTree = "<group>"; };
 		1F7494931AC5E3BA00A03A3E /* StageCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StageCardTableViewCell.m; path = Cards/StageCardTableViewCell.m; sourceTree = "<group>"; };
 		1F7494941AC5E3BA00A03A3E /* StageCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StageCardTableViewCell.xib; path = Cards/StageCardTableViewCell.xib; sourceTree = "<group>"; };
+		1FA903E51ACE3EB200E6583F /* FeaturingSingleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeaturingSingleTableViewCell.h; path = TableCells/FeaturingSingleTableViewCell.h; sourceTree = "<group>"; };
+		1FA903E61ACE3EB200E6583F /* FeaturingSingleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeaturingSingleTableViewCell.m; path = TableCells/FeaturingSingleTableViewCell.m; sourceTree = "<group>"; };
+		1FA903E71ACE3EB200E6583F /* FeaturingSingleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeaturingSingleTableViewCell.xib; path = TableCells/FeaturingSingleTableViewCell.xib; sourceTree = "<group>"; };
+		1FA903EA1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeaturingDoubleTableViewCell.h; path = TableCells/FeaturingDoubleTableViewCell.h; sourceTree = "<group>"; };
+		1FA903EB1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeaturingDoubleTableViewCell.m; path = TableCells/FeaturingDoubleTableViewCell.m; sourceTree = "<group>"; };
+		1FA903EC1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeaturingDoubleTableViewCell.xib; path = TableCells/FeaturingDoubleTableViewCell.xib; sourceTree = "<group>"; };
+		1FA903EF1ACE715C00E6583F /* ArtistCardHalf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistCardHalf.h; sourceTree = "<group>"; };
+		1FA903F01ACE715C00E6583F /* ArtistCardHalf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistCardHalf.m; sourceTree = "<group>"; };
+		1FA903F41ACE879300E6583F /* ArtistCardSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistCardSingle.h; sourceTree = "<group>"; };
+		1FA903F51ACE879300E6583F /* ArtistCardSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistCardSingle.m; sourceTree = "<group>"; };
+		1FA903F71ACEF6A200E6583F /* FeaturingArtistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeaturingArtistsViewController.h; path = Artists/FeaturingArtistsViewController.h; sourceTree = "<group>"; };
+		1FA903F81ACEF6A200E6583F /* FeaturingArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeaturingArtistsViewController.m; path = Artists/FeaturingArtistsViewController.m; sourceTree = "<group>"; };
+		1FA903F91ACEF6A200E6583F /* FeaturingArtistsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeaturingArtistsViewController.xib; path = Artists/FeaturingArtistsViewController.xib; sourceTree = "<group>"; };
 		1FB48F691A9E2BBB00D8421E /* BestivalSeeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BestivalSeeDetailViewController.h; path = Bestival/BestivalSeeDetailViewController.h; sourceTree = "<group>"; };
 		1FB48F6A1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BestivalSeeDetailViewController.m; path = Bestival/BestivalSeeDetailViewController.m; sourceTree = "<group>"; };
 		1FB48F6B1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BestivalSeeDetailViewController.xib; path = Bestival/BestivalSeeDetailViewController.xib; sourceTree = "<group>"; };
@@ -414,6 +468,7 @@
 		1F0937141A8507660040E606 /* AppScreens */ = {
 			isa = PBXGroup;
 			children = (
+				1F42B1B41ACD3C12007F52CB /* MyLineup */,
 				1F3CE9B31AC5B47600AF5C50 /* Artists */,
 				1F3C5EA71AC469E600A86345 /* Stage */,
 				1F1B50D11A8A52980056A6E5 /* Bestival */,
@@ -520,15 +575,15 @@
 				1FBF1F571A8B07C90015A527 /* BestivalSeeViewController.h */,
 				1FBF1F581A8B07C90015A527 /* BestivalSeeViewController.m */,
 				1FBF1F591A8B07C90015A527 /* BestivalSeeViewController.xib */,
+				1FB48F691A9E2BBB00D8421E /* BestivalSeeDetailViewController.h */,
+				1FB48F6A1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m */,
+				1FB48F6B1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib */,
 				1FBF1F5C1A8B07E10015A527 /* BestivalMapViewController.h */,
 				1FBF1F5D1A8B07E10015A527 /* BestivalMapViewController.m */,
 				1FBF1F5E1A8B07E10015A527 /* BestivalMapViewController.xib */,
 				1FBF1F611A8B08160015A527 /* BestivalFriendViewController.h */,
 				1FBF1F621A8B08160015A527 /* BestivalFriendViewController.m */,
 				1FBF1F631A8B08160015A527 /* BestivalFriendViewController.xib */,
-				1FB48F691A9E2BBB00D8421E /* BestivalSeeDetailViewController.h */,
-				1FB48F6A1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m */,
-				1FB48F6B1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib */,
 			);
 			name = Bestival;
 			sourceTree = "<group>";
@@ -547,6 +602,10 @@
 				1F2941281A88601A00C0AE80 /* FestivalCardTableViewCell.h */,
 				1F2941291A88601A00C0AE80 /* FestivalCardTableViewCell.m */,
 				1F29412A1A88601A00C0AE80 /* FestivalCardTableViewCell.xib */,
+				1FA903EF1ACE715C00E6583F /* ArtistCardHalf.h */,
+				1FA903F01ACE715C00E6583F /* ArtistCardHalf.m */,
+				1FA903F41ACE879300E6583F /* ArtistCardSingle.h */,
+				1FA903F51ACE879300E6583F /* ArtistCardSingle.m */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -641,6 +700,12 @@
 				1F3CE9B41AC5B49B00AF5C50 /* ArtistsAllViewController.h */,
 				1F3CE9B51AC5B49B00AF5C50 /* ArtistsAllViewController.m */,
 				1F3CE9B61AC5B49B00AF5C50 /* ArtistsAllViewController.xib */,
+				1F42B1AF1ACA9FCC007F52CB /* ArtistDetailViewController.h */,
+				1F42B1B01ACA9FCC007F52CB /* ArtistDetailViewController.m */,
+				1F42B1B11ACA9FCC007F52CB /* ArtistDetailViewController.xib */,
+				1FA903F71ACEF6A200E6583F /* FeaturingArtistsViewController.h */,
+				1FA903F81ACEF6A200E6583F /* FeaturingArtistsViewController.m */,
+				1FA903F91ACEF6A200E6583F /* FeaturingArtistsViewController.xib */,
 			);
 			name = Artists;
 			sourceTree = "<group>";
@@ -658,6 +723,16 @@
 			name = BestivalFriends;
 			sourceTree = "<group>";
 		};
+		1F42B1B41ACD3C12007F52CB /* MyLineup */ = {
+			isa = PBXGroup;
+			children = (
+				1F42B1B51ACD3C35007F52CB /* MyLineupMainViewController.h */,
+				1F42B1B61ACD3C35007F52CB /* MyLineupMainViewController.m */,
+				1F42B1B71ACD3C35007F52CB /* MyLineupMainViewController.xib */,
+			);
+			name = MyLineup;
+			sourceTree = "<group>";
+		};
 		1F7494861AC5C84700A03A3E /* Artists */ = {
 			isa = PBXGroup;
 			children = (
@@ -667,6 +742,9 @@
 				1F6909C81AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.h */,
 				1F6909C91AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.m */,
 				1F6909CA1AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.xib */,
+				1F42B1AA1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.h */,
+				1F42B1AB1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.m */,
+				1F42B1AC1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.xib */,
 			);
 			name = Artists;
 			sourceTree = "<group>";
@@ -677,6 +755,9 @@
 				1F7494921AC5E3BA00A03A3E /* StageCardTableViewCell.h */,
 				1F7494931AC5E3BA00A03A3E /* StageCardTableViewCell.m */,
 				1F7494941AC5E3BA00A03A3E /* StageCardTableViewCell.xib */,
+				1F4B5FDA1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.h */,
+				1F4B5FDB1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.m */,
+				1F4B5FDC1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.xib */,
 			);
 			name = Stage;
 			sourceTree = "<group>";
@@ -692,6 +773,8 @@
 				1F41D5A81ABBBFF300EB1208 /* ArtistsObject.m */,
 				1F41D5AA1ABBC07900EB1208 /* StageObject.h */,
 				1F41D5AB1ABBC07900EB1208 /* StageObject.m */,
+				1F4B5FE01AC9BFE0007A9994 /* FFTextView.h */,
+				1F4B5FE11AC9BFE0007A9994 /* FFTextView.m */,
 			);
 			name = "Common Objects";
 			sourceTree = "<group>";
@@ -733,6 +816,18 @@
 				1F6038B41A949D34000FA4B1 /* BLineupButtonsTableViewCell.h */,
 				1F6038B51A949D34000FA4B1 /* BLineupButtonsTableViewCell.m */,
 				1F6038B61A949D34000FA4B1 /* BLineupButtonsTableViewCell.xib */,
+				1F42B1BA1ACD9645007F52CB /* BuyGuidTableViewCell.h */,
+				1F42B1BB1ACD9645007F52CB /* BuyGuidTableViewCell.m */,
+				1F42B1BC1ACD9645007F52CB /* BuyGuidTableViewCell.xib */,
+				1F42B1BF1ACDA200007F52CB /* AddArtistsTextTableViewCell.h */,
+				1F42B1C01ACDA200007F52CB /* AddArtistsTextTableViewCell.m */,
+				1F42B1C11ACDA200007F52CB /* AddArtistsTextTableViewCell.xib */,
+				1FA903E51ACE3EB200E6583F /* FeaturingSingleTableViewCell.h */,
+				1FA903E61ACE3EB200E6583F /* FeaturingSingleTableViewCell.m */,
+				1FA903E71ACE3EB200E6583F /* FeaturingSingleTableViewCell.xib */,
+				1FA903EA1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.h */,
+				1FA903EB1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.m */,
+				1FA903EC1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.xib */,
 			);
 			name = BestivalLineup;
 			sourceTree = "<group>";
@@ -883,22 +978,30 @@
 				1F3DD9461AB97629006F25C2 /* BFriendFestivalsTableViewCell.xib in Resources */,
 				1F09371F1A8507C30040E606 /* festival_photo1@2x.png in Resources */,
 				1F1701261A8EF41D00D6F9B2 /* icon_plus@2x.png in Resources */,
+				1F42B1B91ACD3C35007F52CB /* MyLineupMainViewController.xib in Resources */,
 				1F0937221A8507C30040E606 /* icon_search.png in Resources */,
 				1F6909CC1AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.xib in Resources */,
+				1FA903E91ACE3EB200E6583F /* FeaturingSingleTableViewCell.xib in Resources */,
 				1FBF1F751A8B3ABC0015A527 /* icon_twitter@2x.png in Resources */,
 				1F29410A1A885B0A00C0AE80 /* SearchFestivalViewController.xib in Resources */,
 				1F1690291A8E311A00D7F134 /* BInfoThirdTableViewCell.xib in Resources */,
 				1F3C5EAC1AC46A1400A86345 /* StageMainViewController.xib in Resources */,
 				1FBF1F701A8B3ABC0015A527 /* icon_check.png in Resources */,
+				1F42B1AE1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.xib in Resources */,
+				1FA903EE1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.xib in Resources */,
 				1F0936E91A8503140040E606 /* LaunchScreen.xib in Resources */,
 				1F0936E61A8503140040E606 /* Images.xcassets in Resources */,
 				1F2941551A88C06700C0AE80 /* icon_back.png in Resources */,
+				1FA903FB1ACEF6A200E6583F /* FeaturingArtistsViewController.xib in Resources */,
+				1F42B1BE1ACD9645007F52CB /* BuyGuidTableViewCell.xib in Resources */,
 				1F2941561A88C06700C0AE80 /* icon_back@2x.png in Resources */,
 				1FBF1F771A8B3F2D0015A527 /* bg_btn_white.png in Resources */,
 				1F6909C71AC8EFF400F560C1 /* icon_add_grey@2x.png in Resources */,
+				1F42B1B31ACA9FCC007F52CB /* ArtistDetailViewController.xib in Resources */,
 				1F17012F1A8FF75300D6F9B2 /* icon_cancel_green.png in Resources */,
 				1F0937201A8507C30040E606 /* icon_nav_menu.png in Resources */,
 				1FB48F6D1A9E2BBB00D8421E /* BestivalSeeDetailViewController.xib in Resources */,
+				1F4B5FDE1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.xib in Resources */,
 				1F0937291A851DD60040E606 /* bg_tabBar.png in Resources */,
 				1F7494961AC5E3BA00A03A3E /* StageCardTableViewCell.xib in Resources */,
 				1F2838EE1A9AD674006FACBB /* bestival_photo2@2x.png in Resources */,
@@ -917,6 +1020,7 @@
 				1F1701361A8FF75300D6F9B2 /* lineup_photo1@2x.png in Resources */,
 				1F3DD9311AB925C9006F25C2 /* FriendDetailViewController.xib in Resources */,
 				1F29414A1A88BCBF00C0AE80 /* ChatsMainViewController.xib in Resources */,
+				1F42B1C31ACDA200007F52CB /* AddArtistsTextTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,10 +1041,14 @@
 				1F2941441A889A4300C0AE80 /* MainSidebarViewController.m in Sources */,
 				1F3CE9B71AC5B49B00AF5C50 /* ArtistsAllViewController.m in Sources */,
 				1F3DD9301AB925C9006F25C2 /* FriendDetailViewController.m in Sources */,
+				1F42B1C21ACDA200007F52CB /* AddArtistsTextTableViewCell.m in Sources */,
+				1FA903F61ACE879300E6583F /* ArtistCardSingle.m in Sources */,
 				1F2941511A88BE5800C0AE80 /* FriendsMainViewController.m in Sources */,
 				1FC457921A943BE900FF631C /* BLineupMoreTableViewCell.m in Sources */,
+				1F42B1B21ACA9FCC007F52CB /* ArtistDetailViewController.m in Sources */,
 				1F2941401A88997100C0AE80 /* SWRevealViewController.m in Sources */,
 				1F41D5A91ABBBFF300EB1208 /* ArtistsObject.m in Sources */,
+				1F42B1BD1ACD9645007F52CB /* BuyGuidTableViewCell.m in Sources */,
 				1F17013A1A8FF99E00D6F9B2 /* BLineupListTableViewCell.m in Sources */,
 				1F1690281A8E311A00D7F134 /* BInfoThirdTableViewCell.m in Sources */,
 				1F0936DE1A8503140040E606 /* FestivalApp.xcdatamodeld in Sources */,
@@ -948,16 +1056,19 @@
 				1FC68AF71A9835C200A10A15 /* SharedManager.m in Sources */,
 				1F1B50CF1A8A52900056A6E5 /* BestivalInfoViewController.m in Sources */,
 				1F0936DB1A8503130040E606 /* AppDelegate.m in Sources */,
+				1F4B5FE21AC9BFE0007A9994 /* FFTextView.m in Sources */,
 				1FB48F6C1A9E2BBB00D8421E /* BestivalSeeDetailViewController.m in Sources */,
 				1F0937011A85042D0040E606 /* HomeFestivalViewController.m in Sources */,
 				1F6038B71A949D34000FA4B1 /* BLineupButtonsTableViewCell.m in Sources */,
 				1FC68AF41A9830DC00A10A15 /* FestivalObject.m in Sources */,
 				1FC68AFE1A98380700A10A15 /* BSeeCategoryTableViewCell.m in Sources */,
+				1FA903FA1ACEF6A200E6583F /* FeaturingArtistsViewController.m in Sources */,
 				1F3DD9451AB97629006F25C2 /* BFriendFestivalsTableViewCell.m in Sources */,
 				1FBF1F5A1A8B07C90015A527 /* BestivalSeeViewController.m in Sources */,
 				1F29415B1A88C0A600C0AE80 /* SettingsMainViewController.m in Sources */,
 				1FBF1F641A8B08160015A527 /* BestivalFriendViewController.m in Sources */,
 				1FC68B031A988A6A00A10A15 /* BSeePhotoCardTableViewCell.m in Sources */,
+				1FA903F11ACE715C00E6583F /* ArtistCardHalf.m in Sources */,
 				1F1690371A8E31DC00D7F134 /* BInfoForthTableViewCell.m in Sources */,
 				1F3DD91F1AB91E47006F25C2 /* BFriendListTableViewCell.m in Sources */,
 				1F74948A1AC5C86F00A03A3E /* ArtistListTableViewCell.m in Sources */,
@@ -970,10 +1081,15 @@
 				1F41D5AC1ABBC07900EB1208 /* StageObject.m in Sources */,
 				1F1690321A8E319800D7F134 /* BInfoFirstTableViewCell.m in Sources */,
 				1F3C5EAB1AC46A1400A86345 /* StageMainViewController.m in Sources */,
+				1FA903E81ACE3EB200E6583F /* FeaturingSingleTableViewCell.m in Sources */,
+				1F42B1AD1ACA9E34007F52CB /* ArtistInfoHeaderTableViewCell.m in Sources */,
 				1F7494951AC5E3BA00A03A3E /* StageCardTableViewCell.m in Sources */,
 				1F0936D81A8503130040E606 /* main.m in Sources */,
 				1FBF1F5F1A8B07E10015A527 /* BestivalMapViewController.m in Sources */,
+				1F4B5FDD1AC9B32D007A9994 /* StageInfoHeaderTableViewCell.m in Sources */,
+				1FA903ED1ACE3EF800E6583F /* FeaturingDoubleTableViewCell.m in Sources */,
 				1F6909CB1AC8FFC900F560C1 /* ArtistsListDetailTableViewCell.m in Sources */,
+				1F42B1B81ACD3C35007F52CB /* MyLineupMainViewController.m in Sources */,
 				1F2941091A885B0A00C0AE80 /* SearchFestivalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1096,9 +1212,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Blind Vision Apps, LLC (Y42F42MA92)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Blind Vision Apps, LLC (Y42F42MA92)";
 				INFOPLIST_FILE = FestivalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c586e995-150d-4a8f-ae47-4936deb08e63";
 			};
 			name = Debug;
 		};
@@ -1106,9 +1225,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Blind Vision Apps, LLC (Y42F42MA92)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Blind Vision Apps, LLC (Y42F42MA92)";
 				INFOPLIST_FILE = FestivalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c586e995-150d-4a8f-ae47-4936deb08e63";
 			};
 			name = Release;
 		};
